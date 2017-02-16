@@ -17,7 +17,7 @@ The KiDS footprint does not overlap with suitable spectroscopic surveys. Rather 
 For CC
 
 
-quantify how much area needed. Used 1.5 sqdeg for K450.
+quantify how much area needed. Used 1.5 sqdeg for K450. comparing z=0.7 to 1.5 CC is 3.5x more noisy than DIR.
 CC error needs to come down so complementary analysis has proper value
 argue VIPERS OK even though redshift-selected; can combine with low-z info from GAMA.
 
