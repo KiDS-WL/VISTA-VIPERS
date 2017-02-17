@@ -1,0 +1,16 @@
+*.aux
+*.log
+*.dvi
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+vista-vipers.ps
+vista-vipers.pdf
+*~
+*.maf
+*.mtc
+*.mtc0
+*.ptc1
+*.toc
+.DS_Store
