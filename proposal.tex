@@ -294,21 +294,33 @@ We propose to obtain near-IR fluxes of some 100,000 galaxies in deep spectroscop
 %
 % All macros in this box are NOT checked at the pdfLaTeX compilation.
 
-\ScientificRationale{Our cosmological model, $\Lambda$CDM, is sufficiently strange that, despite its great success describing the Universe, it warrants stringent testing. Gravitational lensing by large scale structure, a.k.a. cosmic shear, is one of the most direct probes that we can use. Cosmic shear surveys have now progressed to the point that the accuracy with which they measure the relevant cosmological parameters can compete with the best other probes, including CMB experiments. In particular lensing can measure well the amount of clustered matter, summarized in the parameter $S_8\equiv= \sigma_8 \sqrt{\Omega_m/0.3}$. Intriguingly, most cosmic shear measurements (but not all) measure $S_8$ values that are significantly lower than what is predicted by the best-fit $\Lambda$CDM model from the Planck CMB mission (see Fig. 1).
+\ScientificRationale{Our cosmological model, $\Lambda$CDM, is sufficiently strange that, despite its great success describing the Universe, it warrants stringent testing. Gravitational lensing by large scale structure, a.k.a. cosmic shear, is one of the most direct probes that we can use. Cosmic shear surveys have now progressed to the point that the accuracy with which they measure the relevant cosmological parameters can compete with the best other probes, including CMB experiments. In particular lensing can measure well the amount of clustered matter, summarized in the parameter $S_8\equiv \sigma_8 \sqrt{\Omega_m/0.3}$. Intriguingly, most cosmic shear measurements (but not all) measure $S_8$ values that are significantly lower than what is predicted by the best-fit $\Lambda$CDM model from the Planck CMB mission (Kilbinger et al. 2015).
 
-The most recent such measurement is from an analysis of the first one-third of the data from the ESO-led Kilo-Degree Survey (KiDS) on the VST (Kuijken et al 2015; Hildebrandt et al. 2017 $\equiv$ H17), and its constraints on $S_8$ are in tension at the $\sim2.5\sigma$ level with Planck (2015). KiDS continues, and analysis of a data set double the size of H17 is underway.
+The most recent such measurement, shown in green in Fig.~1, is from an analysis of the first one-third of the data from the ESO-led Kilo-Degree Survey (KiDS) on the VST (Kuijken et al 2015; Hildebrandt et al. 2017 $\equiv$ H17), and its constraints on $S_8$ are in tension at the $\sim2.5\sigma$ level with Planck (2015). KiDS observations continue, and analysis of a data set double the size of H17 (some 900 square degrees) is starting up.
 
-Such cosmic shear constraints combine galaxy shape measurements with photometric redshifts, in order to provide the vital 3D information that sets the physical scale for the observed weak lensing distortions (the amplitude of the weak lensing distortion depends on the angular diameter distances to lens and source). Knowing the redshift {\em distribution} of the galaxies is essential, even if individual photometric redshifts are noisy. Because percent-level errors in the mean redshift cause significant effects on the cosmological parameter inference, calibrating these $N(z)$'s against spectroscopic redshifts is unavoidable. Rather than embarking on a massive spectroscopic survey of KiDS galaxies, it is much more efficient to obtain KiDS- and VIKING-like photometry for areas of the sky where such redshifts have already been obtained. As it turns out, the depth of KiDS is such that it is well-matched to some of the most important deep redshift surveys available today.
+Such cosmic shear constraints combine galaxy shape measurements with photometric redshifts, in order to provide the vital 3D information that sets the physical scale for the observed weak lensing distortions (the amplitude of the weak lensing distortion depends on the angular diameter distances to lens and source). Knowing the redshift {\em distribution} of the galaxies is essential, even if individual photometric redshifts are noisy. Because percent-level errors in the mean redshift have significant effects on the cosmological parameter inference, calibrating these $N(z)$'s against spectroscopic redshifts is unavoidable. 
 
-In KiDS we have classified our galaxies into four tomographic bins, based on the best-fit template-fitting photometric redshifts using the well-known BPZ code. There are two possible strategies for obtaining the $N(z)$ for each of these bins: reweighting spectroscopic redshift catalogues so that they reproduce the distribution of galaxy magnitudes and colours using $k$-nearest-neighbour techniques (DIR); or cross-correlating the KiDS galaxies with thin redshift slices of an overlapping spectroscopic redshift catalogue and thus deducing which fraction of KiDS galaxies lies at each redshift (CC). The methods are complementary. DIR requires a spectroscopic redshift catalogue that spans the magnitude range of the KiDS galaxies; on the other hand CC requires a galaxy population that overlaps in redshift. In the KiDS-450 analysis our CC calibration relied on just 1.5 square degrees of suitable spectroscopic data, and the errors were consequently large. Bringing the accuracy of the CC calibration into line with what we achieved with DIR, by incorporating the VIPERS field, is one main goal of this proposal. The DIR method, on the other hand, is susceptible to cosmic variance and so benefits from having a number of widely separated deep calibration fields. Adding two deep spectroscopic fields for DIR calibration is our second goal.
-
-Apart from the cosmology science case outlined above, we point out the significant legacy value of near-IR imaging data on VIPERS, which -- somewhat surprisingly -- is lacking. In particular, these data will allow robust stellar mass estimates to be obtained for all VIPERS galaxies through SED fitting, resulting in an accurate measurement of the stellar mass function out to redshift 1 for galaxies down to $???M_\odot$. VISTA is uniquely able to provide such measurements in a few nights.
+In KiDS we have classified our galaxies into four tomographic bins, based on the best-fit template-fitting photometric redshifts using the well-known BPZ code. There are two possible strategies for obtaining the $N(z)$ for each of these bins: reweighting spectroscopic redshift catalogues so that they reproduce the distribution of galaxy magnitudes and colours using $k$-nearest-neighbour techniques (DIR); or cross-correlating the KiDS galaxies with thin redshift slices of an overlapping spectroscopic redshift catalogue and thus deducing which fraction of KiDS galaxies lies at each redshift (CC). The methods are complementary. DIR requires a spectroscopic redshift catalogue that spans the magnitude range of the KiDS galaxies; on the other hand CC requires a galaxy population that overlaps in redshift. In the KiDS-450 analysis our CC calibration relied on just 1.5 square degrees of suitable spectroscopic data, and the errors (grey contours in Fig.~1) were consequently large. Only optical data were used.
 
 }
 
 \ImmediateObjective{%Explain choice of field, and why we need the area we request. Argument is that CC error over redshift range beyond GAMA is 3x larger than DIR, so need to increase area by $3^2=10\times$.
 
-Our immediate goal is to increase the area of sky that can be used for CC redshift calibration by a factor of ten (i.e., to 15 square degrees) and hence make it a viable way to calibrate the photometric redshifts of KiDS and similar-depth surveys. KiDS +VIKING provide 9-band $ugriZYJHK$ fluxes for galaxies with a median redshifts of 0.7, and their depth is well-matched to the $i=22.5$ magnitude limit of VIPERS (sparse, but wide area) and VVDS (complete, narrow area). In addition to a contiguous VIPERS area we also include two isolated deep fields, VVDS F02 and ??, to beat down cosmic variance for the DIR calibration scheme which is currently tied to just three deep fields (COSMOS and CDFS, and one of the DEEP2 fields).
+Our immediate objective is to firm up the calibration of the photometric redshifts for KiDS, for both the CC and DIR approaches. Such an improvement is necessary to (i) ensure proper validation of the KiDS-450 calibration, and (ii) prepare for the next installment of KiDS and other cosmic shear surveys, where the requirements on the photometric redshifts are even more stringent.
+
+Specifically, we will (i)
+bring the accuracy of the CC calibration into line with what we achieved with DIR, by incorporating large-area spectroscopic fields; (ii) 
+reduce the sensitivity of the DIR method to cosmic variance by adding two widely separated deep calibration fields; and (iii)
+improve the overall quality of the photometric redshift estimates (used to define the tomographic bins) by including VISTA data from the ESO public VIKING survey. VIKING covers the same sky as KiDS, and was completed last year: its inclusion will enable us to define a fifth tomographic bin beyond redshift 0.9, which will increase the volume and hence the statistical power of KiDS by an estimated 20\%.
+
+Rather than embarking on a massive spectroscopic survey of KiDS galaxies, it is much more efficient to obtain KiDS- and VIKING-like photometry for areas of the sky where such redshifts have already been obtained. 
+Bringing the CC accuracy to the level of DIR requires an increase in the area covered with deep spectra by a factor of 10, from 1.5 to 15 sq.deg. At the low redshift end we can use the GAMA survey, which overlaps with KiDS/VIKING observations, but beyond the GAMA redshift limit of 0.5 new data are required. The VIPERS survey is ideal for this purpose: its depth of I=22.5 is well-matched to KiDS, and its photometric preselection ensures that it contains mostly galaxies between redshifts 0.5 and 1.2 (Fig.~2).
+
+For all fields mentioned above (from VIPERS and VVDS) KiDS observations are already scheduled on the VST and being taken; here we request the corresponding VISTA data.
+
+XXX SOME ILLUSTRATION THAT ADDING IR DATA HELPS? XXX
+
+Apart from the cosmology science case outlined above, we point out the significant legacy value of near-IR imaging data on VIPERS, which -- somewhat surprisingly -- is lacking. In particular, these data will allow robust stellar mass estimates to be obtained for all VIPERS galaxies through SED fitting, resulting in an accurate measurement of the stellar mass function out to redshift 1 for galaxies down to $???M_\odot$. VISTA is uniquely able to provide such measurements in a few nights.
 
  } 
 
@@ -326,12 +338,14 @@ Our immediate goal is to increase the area of sky that can be used for CC redshi
 %\MakePicture{galaxy.pdf}{angle=90,width=10cm}
 %\MakeCaption{Fig.~1: A caption for your figure can be inserted here.}
 
-\MakePicture{ESO_prop_plot_zdist.pdf}{height=8cm}
-\MakeCaption{Fig.1: Numbers of spectroscopic redshifts available in GAMA, VIPERS and SDSS, vs. the number that could be used in the KiDS-450 CC calibration of Hildebrandt et al. (2017). GAMA overlaps with KiDS ans will be used at $z<0.5$; with the proposed KiDS/VIKING-like imaging of the VIPERS area we will be able to do the same at higher redshift. }
 
 \MakePicture{banana_DIR_vs_CC_vs_Planck.pdf}{height=8cm}
-\MakeCaption{Fig. 2: Cosmology constraints from KiDS-450 using the different photometric redshift calibration strategies. The aim of this proposal is to reduce the CC errors by a factor of $\sqrt{10}$ to bring them in line with the DIR calibration accuracy.}
+% Should we try to include the Kilbinger compilation as well? 
+%\MakePicture{S8_Kilbinger_update_annotated.png}{height=6cm}
+\MakeCaption{Fig.~1: Cosmology constraints from KiDS-450 using the different photometric redshift calibration strategies. Note the tension between Planck and the most precise (DIR) calibration. The aim of this proposal is to reduce the CC errors by a factor of $\sqrt{10}$ to bring them in line with the DIR calibration accuracy, and to prepare for the analysis of the next, twice as extensive, KiDS lensing data.}
 
+\MakePicture{ESO_prop_plot_zdist.pdf}{height=8cm}
+\MakeCaption{Fig.~2: Numbers of spectroscopic redshifts available in GAMA, VIPERS and SDSS, vs. the number that could be used in the KiDS-450 CC calibration of Hildebrandt et al. (2017). GAMA overlaps with KiDS ans will be used at $z<0.5$; with the proposed KiDS/VIKING-like imaging of the VIPERS area we will be able to do the same at higher redshift. }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% THE PAGE OF TECHNICAL JUSTIFICATIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -398,7 +412,10 @@ All KiDS and VIKING data are released via the ESO archive and publicly available
 % (http://archive.eso.org)? If yes, explain the need for new data.
 % This macro is NOT checked at the pdfLaTeX compilation.
 
-\RequestedDataRemark{No}
+\RequestedDataRemark{
+There are some JHK pointings from the VISTA public survey VHS, but they are too shallow. In addition some parts of W1 are covered by VIDEO in ZYJHK, which we would not need to repeat.
+
+}
 
 %
 %---- BOX 9b -- ESO GTO/Public Survey Programme Duplications---------
@@ -489,18 +506,21 @@ de Jong J.T.A. et al., A\&A, submitted (arXiv:1703.02991): {\bf The third data r
 %
 % DO NOT USE ANY TEX/LATEX MACROS FOR THE TARGETS
 
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{00 00 00}{00 00 00}{2.5}{}{1.5d}{Pointing 1}{}
+\Target{A}{VIPERS-W1}{02 07 36}{04 37 30}{2.5}{}{1.5d}{Pointing 1}{}
+\Target{A}{VIPERS-W1}{02 13 36}{04 37 30}{2.5}{}{1.5d}{Pointing 2}{}
+\Target{A}{VIPERS-W1}{02 19 36}{04 37 30}{2.5}{}{1.5d}{Pointing 3}{}
+\Target{A}{VIPERS-W1}{02 25 36}{04 37 30}{2.5}{}{1.5d}{Pointing 4}{}
+\Target{A}{VIPERS-W1}{02 31 36}{04 37 30}{2.5}{}{1.5d}{Pointing 5}{}
+
+\Target{A}{VIPERS-W4}{22 03 08}{01 52 00}{2.5}{}{1.5d}{Pointing 1}{}
+\Target{A}{VIPERS-W4}{22 09 08}{01 52 00}{2.5}{}{1.5d}{Pointing 2}{}
+\Target{A}{VIPERS-W4}{22 15 08}{01 52 00}{2.5}{}{1.5d}{Pointing 3}{}
+
+\Target{A}{VVDSF10}{10 04 20}{02 00 00}{2.5}{}{1.5d}{}{}
+\Target{A}{VVDSF14}{13 59 35}{05 07 00}{2.5}{}{1.5d}{}{}
+\Target{A}{VVDSF22}{22 18 00}{-00 06 00}{2.5}{}{1.5d}{Pointing 1}{}
+\Target{A}{VVDSF22}{22 18 00}{00 54 00}{2.5}{}{1.5d}{Pointing 2}{}
+
 
 
 %                      ***************** 
@@ -516,7 +536,9 @@ de Jong J.T.A. et al., A\&A, submitted (arXiv:1703.02991): {\bf The third data r
 % of your targets.
 % This macro is NOT checked at the pdfLaTeX compilation.
 
-\TargetNotes{These observations do not cover the entire VIPERS area, but target a stripe which contains ten times as many galaxies with spectroscopic redshifts down to $i=22.5$ than are available in VISTA pointings thus far.}
+\TargetNotes{These observations do not cover the entire VIPERS area, but target two stripes which contains ten times as many galaxies with spectroscopic redshifts down to $i=22.5$ as are available in VISTA fields thus far.\\
+The VVDS fields provide about twice as many targets per unit area as VIPERS, with no photo-z preselection, and so are more suited to firming up the DIR calibration.
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% TWO PAGES OF SCHEDULING REQUIREMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
