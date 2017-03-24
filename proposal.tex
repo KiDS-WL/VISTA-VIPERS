@@ -346,7 +346,7 @@ Apart from the cosmology science case outlined above, we point out the significa
 \MakeCaption{Fig.~2: Numbers of spectroscopic redshifts available in GAMA, VIPERS and SDSS, vs. the number that were used in the KiDS-450 CC calibration of Hildebrandt et al. (2017). GAMA and SDSS overlap with KiDS and will be used at $z<0.7$; with the proposed KiDS/VIKING-like imaging of the VIPERS area we will be able to do the same at higher redshift. }
 
 \MakePicture{KiDS_zz.jpg}{height=5.5cm}
-\MakeCaption{Fig.~3: Photometric vs. spectroscopic redshifts using four optical KiDS bands as it was done in H17 (\emph{left}) and using optical and near-infrared data from KiDS and VIKING (\emph{right}).}
+\MakeCaption{Fig.~3: Photometric vs. spectroscopic redshifts using four optical bands as it was done in H17 (\emph{left}) and using optical and near-infrared data from VST and VISTA (\emph{right}) including recently obtained ESO DDT data.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% THE PAGE OF TECHNICAL JUSTIFICATIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -358,24 +358,30 @@ Apart from the cosmology science case outlined above, we point out the significa
 % and of the requested number of nights or hours.  
 % All macros in this box are NOT checked at the pdfLaTeX compilation.
 
-\WhyLunarPhase{We follow the VISTA VIKING survey constraints.}  
+\WhyLunarPhase{No restrictions on the lunar phase are required for observations in the $H$- and $Ks$-bands. For $Z$ and $Y$ we require grey time, and we split the $J$-band exposures into two halves, one half in grey time and one half without restrictions. This follows closely the VIKING observing strategy.}
 
-\WhyNights{Provide a careful justification of the requested number of 
-  nights or hours for each observing run here. ESO Exposure Time 
-  Calculators exist for all Paranal and La Silla instruments and are 
-  available at the following web address: 
+\WhyNights{We have requested the number of hours required to observe a single VISTA `tile' over each of the target fields listed in Sect.~11, using the same observation strategy as is  implemented in VIKING. Total exposure times per filter in VIKING are:
 
-  http://www.eso.org/observing/etc .
+\vspace{0.5cm}
+\begin{tabular}{rr}
+filter & exp. time [s]\\
+\hline
+$Z$ & 480\\
+$Y$ & 400\\
+$J$ & 400\\
+$H$ & 300\\
+$Ks$ & 480\\
+\hline
+total & 2060\\
+\end{tabular}
 
-  Links to exposure time calculators for APEX instrumentation
-  can be found in Section 7 of the Call for Proposals.
+\vspace{0.5cm}
+In order to attain these exposure times over a uniform area requires a six-step dither strategy that results in the majority of the area being covered by two dithers. Hence the required time on the telescope is three times as large, 6180s. With overheads we expect to be able to observe each field in 2.5h resulting in a total time request of 30h for our program.
 }
 
-\TelescopeJustification{Justification for the use of the selected
-  telescope (e.g., VLT, APEX, etc...)  with respect to other 
-  available alternatives.}
+\TelescopeJustification{The purpose of these observations is to create a KiDS+VIKING equivalent dataset covering the DEEP2 equatorial fields. As such, we require observations to be done using the same instruments, and preferably in the same observing strategy and sky conditions, as each of these two surveys. VST has already completed KiDS-like observations of the DEEP2 fields, leaving only VIKING to be completed.  }
 
-\ModeJustification{Explain if a particular observing mode is specifically needed for this programme. If either can, in principle, be used then please enter N/A. }
+\ModeJustification{N/A}
 
 
 % Please specify the type of calibrations needed.
@@ -404,6 +410,7 @@ This proposal is part of the KiDS public survey team's effort to measure the gro
 A full list of KiDS publications can be found at http://kids.strw.leidenuniv.nl/ .
 All KiDS and VIKING data are released via the ESO archive and publicly available.
 
+A DDT proposal, similar to this one but observing only two tiles (overlapping with the DEEP2 redshift survey), has been submitted in November 2016 and observations were finished in December. The data have been analysed and included in the KiDS+VIKING photo-z calibration. The results in the right-hand panel of Fig.~3 are directly based on this data.
 }
 
 %
