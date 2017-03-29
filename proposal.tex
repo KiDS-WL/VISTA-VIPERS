@@ -134,7 +134,7 @@
 
 We propose to obtain near-IR fluxes of some 100,000 galaxies in deep spectroscopic survey fields with VISTA. 
 The rationale is two-fold: {\bf (i)} We aim to establish {\em the} reference data set for cross-correlation techniques to calibrate photometric redshifts (photo-$z$) that form the backbone of current and future weak lensing surveys. These measurements are particularly timely in view of the recent KiDS results (Hildebrandt et al. 2017) which find a significantly lower clustering amplitude of large-scale structure than Planck: the dominant systematic error on this result is the photo-$z$ calibration. %, and as statistical errors come down this will become a fundamental limitation. 
-We propose to target VIPERS and VVDS with VISTA, increasing the existing overlap area between deep spectroscopy and VISTA photometry by a factor of ten, in order to remove this bottleneck. 
+Targeting VIPERS and VVDS with VISTA increases the existing overlap area between deep spectroscopy and near-IR photometry by a factor of ten, and allows us to remove this bottleneck. 
 {\bf (ii)} We also aim to obtain accurate SEDs for these galaxies enabling studies of stellar masses, stellar population ages and dust content down to a stellar mass of $M_*\sim10^{10}M_\odot$ at $z\sim1$.
 
 %First cosmic shear results from the ESO Kilo Degree Survey (KiDS) on the VST show a $\sim2.5\sigma$ tension in the cosmological parameter $S_8 \equiv \sigma_8 (\Omega_m/0.3)^{0.5}$ with respect to results from the Planck CMB satellite. Such a low amplitude $S_8$ was already hinted at in several previous cosmic shear surveys but the new KiDS results are arguably the most robust in terms of statistical precision as well as systematic error control. The dominant source of systematic error is the calibration of photometric redshifts. Inclusion of data from the overlapping VIKING survey on VISTA can significantly improve the redshift errors, but requires VST+VIKING images of deep spectroscopic survey regions for calibration. Whereas the VST is targeting these fields already, not all deep spectroscopic fields that are useful for this calibration are available in the VIRCAM archive: in particular the wide+deep VIPERS survey, which contains some 90,000 redshifts, is not covered. VISTA 5-band imaging on the VIPERS region will furthermore have significant legacy value, particularly for measuring stellar masses of the VIPERS galaxies.
@@ -309,7 +309,7 @@ Combining galaxy shape measurements with photometric redshifts (photo-$z$) adds 
 
 The most recent cosmic shear measurement, shown in green in Fig.~1, is from an analysis of the first one-third of the data from our ESO-led Kilo-Degree Survey (KiDS) on the VST (Kuijken et al 2015; Hildebrandt et al. 2017 $\equiv$ H17), and its constraints on $S_8$ are in tension at the $\sim2.5\sigma$ level with Planck (2015). KiDS observations continue, and analysis of a data set double the size of H17 (some 900 square degrees) is starting up. Another very significant improvement over H17 that is already well underway is the addition of near-infrared data from the overlapping VIKING survey, which covers the same sky as KiDS, and was completed on VISTA last year.
 
-In KiDS we have classified our galaxies into four tomographic bins, based on the best-fit template-fitting photo-$z$ using the well-known BPZ code. There are two possible strategies for obtaining the $N(z)$ for each of these bins: reweighting spectroscopic redshift catalogues so that they reproduce the distribution of galaxy magnitudes and colours using a $k$-nearest-neighbour technique (DIR); or cross-correlating the KiDS galaxies with thin redshift slices of an overlapping spectroscopic redshift catalogue and thus deducing which fraction of KiDS galaxies lies at each redshift (CC). The methods are complementary. DIR requires a very deep spectroscopic redshift catalogue that spans the full magnitude range of the KiDS galaxies; on the other hand CC requires a very large galaxy population that overlaps in redshift, but does not have to be as deep as the reference sample. In the KiDS-450 analysis our CC calibration relied on just 1.5 square degrees of suitable spectroscopic data, and the errors (grey contours in Fig.~1) were consequently large. Only optical data were used.
+In H17 we have classified KiDS galaxies into four tomographic bins, based on the best-fit template-fitting photo-$z$ using the well-known BPZ code. There are two possible strategies for obtaining the $N(z)$ for each of these bins: directly reweighting spectroscopic redshift catalogues so that they reproduce the distribution of galaxy magnitudes and colours using a $k$-nearest-neighbour technique (DIR); or cross-correlating KiDS galaxy positions with thin redshift slices of an overlapping spectroscopic redshift catalogue and thus deducing the fraction of KiDS galaxies at each redshift (CC). The methods are complementary. DIR requires a very deep spectroscopic redshift catalogue that spans the full magnitude range of the KiDS galaxies; on the other hand CC requires a very large galaxy population that overlaps in redshift, but does not have to be as deep as the reference sample. In the KiDS-450 analysis our CC calibration relied on just 1.5 square degrees of suitable spectroscopic data, and the errors (grey contours in Fig.~1) were consequently large. Only optical data were used.
 }
 
 \ImmediateObjective{%Explain choice of field, and why we need the area we request. Argument is that CC error over redshift range beyond GAMA is 3x larger than DIR, so need to increase area by $3^2=10\times$.
@@ -319,10 +319,10 @@ Our immediate objective is to firm up the calibration of the photo-$z$ for KiDS,
 Specifically, we will (i)
 bring the accuracy of the CC calibration into line with what we achieved with DIR, by incorporating large-area spectroscopic fields; (ii) 
 reduce the sensitivity of the DIR method to sample variance by adding two widely separated deep calibration fields; and (iii)
-improve the overall quality of the photo-$z$ estimates (used to define the tomographic bins) by including VIKING data (see Fig.~3), which will enable us to define a fifth tomographic bin beyond redshift 0.9. Adding this fifth high-$z$ bin will increase the volume and hence the statistical power of KiDS by an estimated 20\%.
+improve the overall quality of the photo-$z$ estimates (used to define the tomographic bins) by including VIKING data (see Fig.~2), which will enable us to define a fifth tomographic bin beyond redshift 0.9. Adding this fifth high-$z$ bin will increase the volume and hence the statistical power of KiDS by an estimated 20\%.
 
 Rather than embarking on a massive spectroscopic survey of KiDS galaxies, it is much more efficient to obtain KiDS- and VIKING-like photometry for areas of the sky where such redshifts have already been obtained. 
-Bringing the CC accuracy to the level of DIR requires an increase in the area covered with deep spectra by a factor of 10, from 1.5 to 15 sq.deg. At the low redshift end we can use the GAMA and BOSS surveys, which overlap with KiDS/VIKING observations, but beyond the GAMA/BOSS redshift limit of $z\sim$0.7 new data are required. The VIPERS survey (Scodeggio et al 2016) is ideal for this purpose: it covers a large area, its depth of I=22.5 is well-matched to KiDS, and its photometric preselection ensures that it contains mostly galaxies between redshifts 0.5 and 1.2 (Fig.~2). The VVDS (LeFevre et al 2013) shares a lot of these properties and adds more lines-of-sight to reduce the crucial sample variance in this calibration sample.
+Bringing the CC accuracy to the level of DIR requires an increase in the area covered with deep spectra by a factor of 10, from 1.5 to 15 sq.deg. At the low redshift end we can use the GAMA and BOSS surveys, which overlap with KiDS/VIKING observations, but beyond the GAMA/BOSS redshift limit of $z\sim$0.7 new data are required. The VIPERS survey (Scodeggio et al 2016) is ideal for this purpose: it covers a large area, its depth of I=22.5 is well-matched to KiDS, and its photometric preselection ensures that it contains mostly galaxies between redshifts 0.5 and 1.2 (Fig.~3). The VVDS (LeFevre et al 2013) shares a lot of these properties and adds more lines-of-sight to reduce the crucial sample variance in this calibration sample.
 
 For all fields mentioned above (from VIPERS and VVDS) KiDS observations are already scheduled on the VST and being taken; here we request the corresponding VIKING-like VISTA data.
 
@@ -362,22 +362,7 @@ Apart from the cosmology science case outlined above, we point out the significa
 %fig 2 with caption to the side
 \MakePicture{testfig2.pdf}{width=16.7cm,trim=2cm 11cm 1.8cm 12.cm,clip}
 \MakePicture{KiDS_zz.jpg}{height=5.9cm}
-
-%%%%%%%%%%%%%% alternative with fig 1,2 side by side
-%\MakePicture{banana_zdist_cut.pdf}{height=5cm}
-%% Should we try to include the Kilbinger compilation as well? 
-%%\MakePicture{S8_Kilbinger_update_annotated.png}{height=6cm}
-%\MakeCaption{Fig.~1 (\emph{left}): Cosmology constraints from KiDS-450 using the different photometric redshift calibration strategies. Note the tension between Planck and the most precise (DIR) calibration. The aim of this proposal is to reduce the CC errors by a factor of $\sqrt{10}$ to bring them in line with the DIR calibration accuracy, and to prepare for the analysis of the next, twice as extensive, KiDS lensing data.}
-%
-%%\MakePicture{ESO_prop_plot_zdist.pdf}{height=5cm}
-%\MakeCaption{Fig.~2 (\emph{right}): Numbers of spectroscopic redshifts available in GAMA, VIPERS and SDSS, vs. the number that were used in the KiDS-450 CC calibration of Hildebrandt et al. (2017). GAMA and SDSS overlap with KiDS and will be used at $z<0.7$; with the proposed KiDS/VIKING-like imaging of the VIPERS area we will be able to do the same at higher redshift. }
-%
-%\MakePicture{KiDS_zz.jpg}{height=5.5cm}
-%
 \MakeCaption{Fig.~3: Photo-$z$ ($Z_{\rm B}$) vs. spectroscopic redshifts using four optical bands as it was done in H17 (\emph{left}) and using optical and near-infrared data from VST and VISTA (\emph{right}) including recently obtained ESO DDT data and an updated BPZ setup. The numbers correpond to the normalised median-absolute-deviation (NMAD) of the quantity $(z_{\rm spec}-Z_{\rm B})/(1+z_{\rm spec}) \equiv \Delta z/(1+z)$ and the rate of objects with $|\Delta z/(1+z)|>0.15$ for all objects as well as for objects with photo-$z$ $Z_{\rm B}>0.9$. The near-infrared data improve on all of these statistics, in particular at high-redshifts that weren't used in H17 but will be accessible with the data from this proposal.}
-
-%\MakePicture{cfhls_region.pdf}{height=4.5cm}
-%\MakeCaption{Fig.~4: Footprint of the 2h region showing early VIKING observations in green, VIDEO data in red, VEILS in brown, and the proposed data in blue. PLACEHOLDER! NEED A NEW PLOT HERE!!}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% THE PAGE OF TECHNICAL JUSTIFICATIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -391,16 +376,17 @@ Apart from the cosmology science case outlined above, we point out the significa
 
 \WhyLunarPhase{No restrictions on the lunar phase are required for observations in the $H$- and $Ks$-bands. For $Z$ and $Y$ we require grey time, and we split the $J$-band exposures into two halves, one half in grey time and one half without restrictions. This follows closely the VIKING observing strategy.}
 
-\WhyNights{We have requested the number of hours required to observe a single VISTA `tile' over each of the target fields listed in Sect.~11, using the same observation strategy as is  implemented in VIKING. Total exposure times per filter in VIKING are:
+\WhyNights{We have requested the number of hours required to observe a single VISTA `tile' over each of the target fields listed in Sect.~11, using the same observation strategy as is  implemented in VIKING. Total exposure times and magnitude limits per filter in VIKING are:
 
 \vspace{0.5cm}
 \begin{tabular}{rrr}
-filter & exp. time [s] & lim.mag. ($5\sigma$)\\
+filter & exp. time & lim.mag. \\
+& [s] & ($5\sigma$ AB 2$''$)\\
 \hline
-$Z$ & 480  &23.1\\
-$Y$ & 400 & 22.3\\
-$J$ & 400  & 22.1\\
-$H$ & 300  & 21.5\\
+$Z$ & 480  &22.7\\
+$Y$ & 400 & 22.0\\
+$J$ & 400  & 21.8\\
+$H$ & 300  & 21.1\\
 $Ks$ & 480  & 21.2\\
 \hline
 total & 2060\\
