@@ -327,10 +327,11 @@ Bringing the CC accuracy to the level of DIR requires an increase in the area co
 For all fields mentioned above (from VIPERS and VVDS) KiDS observations are already scheduled on the VST and being taken; here we request the corresponding VIKING-like VISTA data.
 
 \medskip
-Apart from the cosmology science case outlined above, we point out the significant legacy value of near-IR imaging data on VIPERS, which -- somewhat surprisingly -- is lacking. In particular, these data will allow robust stellar mass estimates to be obtained for all VIPERS galaxies through SED fitting, resulting in an accurate measurement of the stellar mass function out to redshift 1 for galaxies down to $10^{10}M_\odot$. VISTA is uniquely able to provide such measurements in a few nights.
+%Apart from the cosmology science case outlined above, we point out the significant legacy value of near-IR imaging data on VIPERS, which -- somewhat surprisingly -- is lacking. In particular, these data will allow robust stellar mass estimates to be obtained for all VIPERS galaxies through SED fitting, resulting in an accurate measurement of the stellar mass function out to redshift 1 for galaxies down to $10^{10}M_\odot$. VISTA is uniquely able to provide such measurements in a few nights.
+Apart from the cosmology science case outlined above, we point out the significant legacy value of near-IR imaging data on VIPERS. Some useful WIRCAM coverage exists (mostly K band, Moutard et al 2016a,b), but the proposed 5-band VISTA data will significantly improve stellar mass estimates of VIPERS galaxies, resulting in an accurate measurement of the stellar mass function out to redshift 1 for galaxies down to $10^{10}M_\odot$.
 
 \medskip
-{\small{\bf References:} Hildebrandt et al 2017, MN 465, 1454 (H17); Kilbinger 2015, RPPh 78, 6901; Kuijken et al 2015, MN 454, 3500; LeFevre et al 2013, A\&A 559, 14; Planck Collaboration 2015, A\&A 594, 13; Scodeggio et al 2016, arXiv:1611.07048}
+{\small{\bf References:} Hildebrandt et al 2017, MN 465, 1454 (H17); Kilbinger 2015, RPPh 78, 6901; Kuijken et al 2015, MN 454, 3500; LeFevre et al 2013, A\&A 559, 14; Moutard et al 2016a/b,  A\&A 590, 102/3; Planck Collaboration 2015, A\&A 594, 13; Scodeggio et al 2016, arXiv:1611.07048}
  } 
 
 %
@@ -393,17 +394,22 @@ Apart from the cosmology science case outlined above, we point out the significa
 \WhyNights{We have requested the number of hours required to observe a single VISTA `tile' over each of the target fields listed in Sect.~11, using the same observation strategy as is  implemented in VIKING. Total exposure times per filter in VIKING are:
 
 \vspace{0.5cm}
-\begin{tabular}{rr}
-filter & exp. time [s]\\
+\begin{tabular}{rrr}
+filter & exp. time [s] & lim.mag. ($5\sigma$)\\
 \hline
-$Z$ & 480\\
-$Y$ & 400\\
-$J$ & 400\\
-$H$ & 300\\
-$Ks$ & 480\\
+$Z$ & 480  &23.1\\
+$Y$ & 400 & 22.3\\
+$J$ & 400  & 22.1\\
+$H$ & 300  & 21.5\\
+$Ks$ & 480  & 21.2\\
 \hline
 total & 2060\\
 \end{tabular}
+
+%23.1, 22.3, 22.1, 21.5 and 21.2  according to Msgr article. ETC suggests otherwise
+%Rel.Notes to DR2 give 21.4 20.6 20.1 19.0 18.6 as 10-sig VEGA
+%Blanton et al give AB-VEGA = .54 (.7) .91 1.39 1.85
+% suggests 5-sigma AB limits 22.6 22.0 21.7 21.1 21.1
 
 \vspace{0.5cm}
 In order to attain these exposure times over a uniform area requires a six-step dither strategy that results in the majority of the area being covered by two dithers. Hence the required time on the telescope is three times as large, 6180s. With overheads we expect to be able to observe each field in 2.5h resulting in a total time request of 30h for our program. This time estimate is directly based on the most recent version of VIKING OBs.
