@@ -198,7 +198,8 @@ Targeting VIPERS and VVDS with VISTA increases the existing overlap area between
 
 
 
-\ObservingRun{A}{100}{VIRCAM}{30h}{oct}{n}{1.2}{CLR}{s}{}
+\ObservingRun{A}{100}{VIRCAM}{15h}{oct}{g}{1.0}{THN}{s}{}
+\ObservingRun{B}{100}{VIRCAM}{15h}{oct}{n}{1.0}{THN}{s}{}
 
 
 % Proprietary time requested.
@@ -542,20 +543,36 @@ Morrison C. et al., MNRAS, 2017, 467, 3576: {\bf the-wizz: clustering redshift e
 %
 % DO NOT USE ANY TEX/LATEX MACROS FOR THE TARGETS
 
-\Target{A}{VIPERS-W1}{02 07 36}{-04 37 30}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W1}{02 13 36}{-04 37 30}{2.5}{}{1.5d}{Pointing 2}{}
-\Target{A}{VIPERS-W1}{02 19 36}{-04 37 30}{2.5}{}{1.5d}{Pointing 3}{}
-\Target{A}{VIPERS-W1}{02 25 36}{-04 37 30}{2.5}{}{1.5d}{Pointing 4}{}
-\Target{A}{VIPERS-W1}{02 31 36}{-04 37 30}{2.5}{}{1.5d}{Pointing 5}{}
+\Target{A}{VIPERS-W1}{02 07 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 1, ZYJ}{}
+\Target{A}{VIPERS-W1}{02 13 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 2, ZYJ}{}
+\Target{A}{VIPERS-W1}{02 19 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 3, ZYJ}{}
+\Target{A}{VIPERS-W1}{02 25 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 4, ZYJ}{}
+\Target{A}{VIPERS-W1}{02 31 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 5, ZYJ}{}
 
-\Target{A}{VIPERS-W4}{22 03 08}{01 52 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VIPERS-W4}{22 09 08}{01 52 00}{2.5}{}{1.5d}{Pointing 2}{}
-\Target{A}{VIPERS-W4}{22 15 08}{01 52 00}{2.5}{}{1.5d}{Pointing 3}{}
+\Target{A}{VIPERS-W4}{22 03 08}{01 52 00}{1.25}{}{1.5d}{Pointing 1, ZYJ}{}
+\Target{A}{VIPERS-W4}{22 09 08}{01 52 00}{1.25}{}{1.5d}{Pointing 2, ZYJ}{}
+\Target{A}{VIPERS-W4}{22 15 08}{01 52 00}{1.25}{}{1.5d}{Pointing 3, ZYJ}{}
 
-\Target{A}{VVDSF10}{10 04 20}{02 00 00}{2.5}{}{1.5d}{}{}
-\Target{A}{VVDSF14}{13 59 35}{05 07 00}{2.5}{}{1.5d}{}{}
-\Target{A}{VVDSF22}{22 18 00}{-00 06 00}{2.5}{}{1.5d}{Pointing 1}{}
-\Target{A}{VVDSF22}{22 18 00}{00 54 00}{2.5}{}{1.5d}{Pointing 2}{}
+\Target{A}{VVDSF10}{10 04 20}{02 00 00}{1.25}{}{1.5d}{single pointing,
+ZYJ}{}
+\Target{A}{VVDSF14}{13 59 35}{05 07 00}{1.25}{}{1.5d}{single pointing,
+ZYJ}{}
+\Target{A}{VVDSF22}{22 18 00}{-00 06 00}{1.25}{}{1.5d}{Pointing 1, ZYJ}{}
+\Target{A}{VVDSF22}{22 18 00}{00 54 00}{1.25}{}{1.5d}{Pointing 2, ZYJ}{}
+\Target{B}{VIPERS-W1}{02 07 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 1, JHKs}{}
+\Target{B}{VIPERS-W1}{02 13 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 2, JHKs}{}
+\Target{B}{VIPERS-W1}{02 19 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 3, JHKs}{}
+\Target{B}{VIPERS-W1}{02 25 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 4, JHKs}{}
+\Target{B}{VIPERS-W1}{02 31 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 5, JHKs}{}
+
+\Target{B}{VIPERS-W4}{22 03 08}{01 52 00}{1.25}{}{1.5d}{Pointing 1, JHKs}{}
+\Target{B}{VIPERS-W4}{22 09 08}{01 52 00}{1.25}{}{1.5d}{Pointing 2, JHKs}{}
+\Target{B}{VIPERS-W4}{22 15 08}{01 52 00}{1.25}{}{1.5d}{Pointing 3, JHKs}{}
+
+\Target{B}{VVDSF10}{10 04 20}{02 00 00}{1.25}{}{1.5d}{single pointing, JHKs}{}
+\Target{B}{VVDSF14}{13 59 35}{05 07 00}{1.25}{}{1.5d}{single pointing, JHKs}{}
+\Target{B}{VVDSF22}{22 18 00}{-00 06 00}{1.25}{}{1.5d}{Pointing 1, JHKs}{}
+\Target{B}{VVDSF22}{22 18 00}{00 54 00}{1.25}{}{1.5d}{Pointing 2, JHKs}{}
 
 
 
@@ -572,7 +589,7 @@ Morrison C. et al., MNRAS, 2017, 467, 3576: {\bf the-wizz: clustering redshift e
 % of your targets.
 % This macro is NOT checked at the pdfLaTeX compilation.
 
-\TargetNotes{These observations do not cover the entire VIPERS area, but target two stripes which contain ten times as many galaxies with spectroscopic redshifts down to $i=22.5$ as are available in VISTA fields thus far.\\
+\TargetNotes{The VIPERS observations do not cover the entire VIPERS area, but target two stripes which contain ten times as many galaxies with spectroscopic redshifts down to $i=22.5$ as are available in VISTA fields thus far.\\
 The VVDS fields provide about twice as many targets per unit area as VIPERS, with no photo-z preselection, and so are better suited to firming up the DIR calibration but will also be used in the CC calibration.
 }
 
@@ -1176,7 +1193,8 @@ The VVDS fields provide about twice as many targets per unit area as VIPERS, wit
 %---- VIRCAM at VISTA --------------------------------------------------
 %-----------------------------------------------------------------------
 %
-\INSconfig{A}{VIRCAM}{IMG}{ZYJHK}
+\INSconfig{A}{VIRCAM}{IMG}{ZYJ}
+\INSconfig{B}{VIRCAM}{IMG}{JHKs}
 %
 %-----------------------------------------------------------------------
 %---- OMEGACAM at VST --------------------------------------------------
