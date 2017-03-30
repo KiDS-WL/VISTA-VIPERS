@@ -198,8 +198,8 @@ Targeting VIPERS and VVDS with VISTA increases the existing overlap area between
 
 
 
-\ObservingRun{A}{100}{VIRCAM}{15h}{oct}{g}{1.0}{THN}{s}{}
-\ObservingRun{B}{100}{VIRCAM}{15h}{oct}{n}{1.0}{THN}{s}{}
+\ObservingRun{A}{100}{VIRCAM}{15h}{oct}{g}{1.2}{THN}{s}{}
+\ObservingRun{B}{100}{VIRCAM}{15h}{oct}{n}{1.2}{THN}{s}{}
 
 
 % Proprietary time requested.
@@ -323,7 +323,7 @@ reduce the sensitivity of the DIR method to sample variance by adding two widely
 improve the overall quality of the photo-$z$ estimates (used to define the tomographic bins) by including VIKING data (see Fig.~2), which will enable us to define a fifth tomographic bin beyond redshift 0.9. Adding this fifth high-$z$ bin will increase the volume and hence the statistical power of KiDS by an estimated 20\%.
 
 Rather than embarking on a massive spectroscopic survey of KiDS galaxies, it is much more efficient to obtain KiDS- and VIKING-like photometry for areas of the sky where such redshifts have already been obtained. 
-Bringing the CC accuracy to the level of DIR requires an increase in the area covered with deep spectra by a factor of 10, from 1.5 to 15 sq.deg. At the low redshift end we can use the GAMA and BOSS surveys, which overlap with KiDS/VIKING observations, but beyond the GAMA/BOSS redshift limit of $z\sim$0.7 new data are required. The VIPERS survey (Scodeggio et al 2016) is ideal for this purpose: it covers a large area, its depth of I=22.5 is well-matched to KiDS, and its photometric preselection ensures that it contains mostly galaxies between redshifts 0.5 and 1.2 (Fig.~3). The VVDS (LeFevre et al 2013) shares a lot of these properties and adds more lines-of-sight to reduce the crucial sample variance in this calibration sample.
+Bringing the CC accuracy to the level of DIR requires an increase in the area covered with deep spectra by a factor of 10, from 1.5 to 15 sq.deg. At the low redshift end we can use the GAMA, BOSS, and 2dFLenS surveys, which overlap with KiDS/VIKING observations, but beyond the GAMA/BOSS/2dFLenS redshift limit of $z\sim$0.7 new data are required. The VIPERS survey (Scodeggio et al 2016) is ideal for this purpose: it covers a large area, its depth of I=22.5 is well-matched to KiDS, and its photometric preselection ensures that it contains mostly galaxies between redshifts 0.5 and 1.2 (Fig.~3). The VVDS (LeFevre et al 2013) shares a lot of these properties and adds more lines-of-sight to reduce the crucial sample variance in this calibration sample.
 
 For all fields mentioned above (from VIPERS and VVDS) KiDS observations are already scheduled on the VST and being taken; here we request the corresponding VIKING-like VISTA data.
 
@@ -589,7 +589,8 @@ ZYJ}{}
 % of your targets.
 % This macro is NOT checked at the pdfLaTeX compilation.
 
-\TargetNotes{The VIPERS observations do not cover the entire VIPERS area, but target two stripes which contain ten times as many galaxies with spectroscopic redshifts down to $i=22.5$ as are available in VISTA fields thus far.\\
+\TargetNotes{We follow the observing strategy of the VIKING main survey: we split the observations into two OBs, with observations in 3 filters each. The reddest bands can be done in bright time. J band observations are split between the two OBs for added robustness of the photometric calibration.\\
+The VIPERS observations do not cover the entire VIPERS area, but target two stripes which contain ten times as many galaxies with spectroscopic redshifts down to $i=22.5$ as are available in VISTA fields thus far.\\
 The VVDS fields provide about twice as many targets per unit area as VIPERS, with no photo-z preselection, and so are better suited to firming up the DIR calibration but will also be used in the CC calibration.
 }
 
