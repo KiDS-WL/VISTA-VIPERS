@@ -1,0 +1,1471 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%.IDENTIFICATION $Id: template.tex.src,v 1.41 2008/01/25 10:47:12 fsogni Exp $
+%.LANGUAGE       TeX, LaTeX
+%.ENVIRONMENT    ESOFORM
+%.PURPOSE        Template application form for ESO Observing time.
+%.AUTHOR         The Esoform Package is maintained by the Observing
+%                Programmes Office (OPO) while the background software
+%                is provided by the User Support System (USS) Department.
+%
+%-----------------------------------------------------------------------
+%
+%
+%                   ESO LA SILLA PARANAL OBSERVATORY
+%                   --------------------------------
+%                   NORMAL PROGRAMME PHASE 1 TEMPLATE
+%                   ---------------------------------
+%
+%
+%
+%          PLEASE CHECK THE ESOFORM USERS' MANUAL FOR DETAILED 
+%              INFORMATION AND DESCRIPTIONS OF THE MACROS. 
+%     (see the file usersmanual.tex provided in the ESOFORM package) 
+%
+%
+%        ====>>>> TO BE SUBMITTED THROUGH WEB UPLOAD  <<<<====
+%               (see the Call for Proposals for details)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%                      I M P O R T A N T    N O T E
+%                      ----------------------------
+%
+% By submitting this proposal, the Principal Investigator takes full
+% responsibility for the content of the proposal, in particular with
+% regard to the names of CoI's and the agreement to act in accordance
+% with the ESO policy and regulations, should observing time be
+% granted.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%
+%    - LaTeX *is* sensitive towards upper and lower case letters.
+%    - Everything after a `%' character is taken as comments.
+%    - DO NOT CHANGE ANY OF THE MACRO NAMES (words beginning with `\')
+%    - DO NOT INSERT ANY TEXT OUTSIDE THE PROVIDED MACROS
+%
+
+%
+%    - All parameters are checked at the verification or submission.
+%    - Some parameters are also checked during the pdfLaTeX
+%      compilation.  If this is not the case, this is indicated by the
+%      phrase
+%      "This parameter is NOT checked at the pdfLaTeX compilation."
+%
+
+\documentclass{esoform}
+
+% The list of LaTeX definitions of commonly used astronomical symbols
+% is already included in the style file common2e.sty (see Table 1 in
+% the Users' Manual).  If you have your own macros or definitions,
+% please insert them here, between the \documentclass{esoform}
+% and the \begin{document} commands.
+%
+%     PLEASE USE NEITHER YOUR OWN MACROS NOR ANY TEX/LATEX MACROS  
+%       IN THE \Title, \Abstract, \PI, \CoI, and \Target MACROS.
+%
+% WARNING: IT IS THE RESPONSIBILITY OF THE APPLICANTS TO STAY WITHIN THE
+% CURRENT BOX LIMITS AND ELIMINATE POTENTIAL OVERFILL/OVERWRITE PROBLEMS 
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% CONTENTS OF THE FIRST PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%---- BOX 1 ------------------------------------------------------------
+%
+% You should use this template for period 100A applications ONLY.
+%
+% DO NOT EDIT THE MACRO BELOW. 
+
+\Cycle{100A}
+
+% Type below, within the curly braces {}, the title of your observing
+% programme (up to two lines).
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% DO NOT USE ANY TEX/LATEX MACROS IN THE TITLE
+
+\Title{VISTA-VIPERS: is cosmic shear in tension with Planck?}  
+
+% Type below the numeric code corresponding to the subcategory of your
+% programme.
+
+\SubCategoryCode{A3}   
+
+% Please specify the type of programme you are submitting. 
+% Valid values: NORMAL, GTO, TOO, CALIBRATION, MONITORING
+% If you specify TOO, you will also need to fill a ToO page below.
+% If you specify CALIBRATION, then the SubCategory Code MUST be set to L0
+
+% If your programme requires more than 100 hours the Large Programme
+% template (templatelarge.tex) must be used.
+
+
+\ProgrammeType{NORMAL}
+
+% For GTO proposals only: uncomment the following and fill out the GTO
+% programme code (as communicated to the respective GTO coordinator).
+
+%\GTOcontract{INS-consortium}		
+
+% For TOO proposals only: uncomment the following if you apply for
+% Rapid Response Mode observations.
+ 
+%\ObservationInRRM{}
+
+% Uncomment the following macro if this proposal is applying for time
+% under the VLT-XMM agreement (only available for odd periods).
+
+%\ObservationWithXMM{}
+
+%---- BOX 2 ------------------------------------------------------------
+%
+% Type below a concise abstract of your proposal (up to 9 lines).
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% DO NOT USE ANY TEX/LATEX MACROS IN THE ABSTRACT
+
+\Abstract{
+
+We propose to obtain near-IR fluxes of some 100,000 galaxies in deep spectroscopic survey fields with VISTA. 
+The rationale is two-fold: {\bf (i)} We aim to establish {\em the} reference data set for cross-correlation techniques to calibrate photometric redshifts (photo-$z$) that form the backbone of current and future weak lensing surveys. These measurements are particularly timely in view of the recent KiDS results (Hildebrandt et al. 2017) which find a significantly lower clustering amplitude of large-scale structure than Planck: the dominant systematic error on this result is the photo-$z$ calibration. %, and as statistical errors come down this will become a fundamental limitation. 
+Targeting VIPERS and VVDS with VISTA increases the existing overlap area between deep spectroscopy and near-IR photometry by a factor of ten, and allows us to remove this bottleneck for KiDS. 
+{\bf (ii)} We also aim to obtain accurate SEDs for these galaxies enabling studies of stellar masses, stellar population ages and dust content down to a stellar mass of $M_*\sim10^{10}M_\odot$ at $z\sim1$.
+
+%First cosmic shear results from the ESO Kilo Degree Survey (KiDS) on the VST show a $\sim2.5\sigma$ tension in the cosmological parameter $S_8 \equiv \sigma_8 (\Omega_m/0.3)^{0.5}$ with respect to results from the Planck CMB satellite. Such a low amplitude $S_8$ was already hinted at in several previous cosmic shear surveys but the new KiDS results are arguably the most robust in terms of statistical precision as well as systematic error control. The dominant source of systematic error is the calibration of photometric redshifts. Inclusion of data from the overlapping VIKING survey on VISTA can significantly improve the redshift errors, but requires VST+VIKING images of deep spectroscopic survey regions for calibration. Whereas the VST is targeting these fields already, not all deep spectroscopic fields that are useful for this calibration are available in the VIRCAM archive: in particular the wide+deep VIPERS survey, which contains some 90,000 redshifts, is not covered. VISTA 5-band imaging on the VIPERS region will furthermore have significant legacy value, particularly for measuring stellar masses of the VIPERS galaxies.
+}
+
+%---- BOX 3 ------------------------------------------------------------
+%
+% Description of the observing run(s) necessary for the completion of
+% your programme.  The macro takes ten parameters: run ID, period,
+% instrument, time requested, month preference, moon requirement,
+% seeing requirement, transparency requirement, observing mode and 
+% run type.
+%
+% 1. RUN ID
+% Valid values: A, B, ..., Z
+% Please note that only one run per intrument is allowed for APEX
+%
+% 2. PERIOD
+% Valid values: 100
+% Exceptions:
+% Monitoring Programmes: These programmes can span up to four periods.
+%
+% VLT-XMM proposals: These are only accepted in odd periods and are 
+% also valid for the next period.
+%
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 3. INSTRUMENT
+% Valid values: AMBER ARTEMIS EFOSC2 FLAMES FLASH FORS2 GRAVITY HARPS HAWKI KMOS LABOCA MUSE NACO OMEGACAM PIONIER SEPIA SHFI SINFONI SOFI SOFOSC SPHERE Special3.6 SpecialAPEX SpecialNTT ULTRACAM UVES VIMOS VIRCAM VISIR XSHOOTER
+% 
+% Please note that only a subset of these instruments will be accepted
+% for Monitoring Programmes. Please see the Call for Proposals and the
+% ESOFORM User Manual for more details.
+%
+% 4. TIME REQUESTED
+% In hours for Service Mode, in nights for Visitor Mode.
+% In either case the time can be rounded up to  1 decimal place. 
+% This parameter is NOT checked at the pdfLaTeX compilation.
+% 
+% 5. MONTH PREFERENCE
+% Valid values: oct, nov, dec, jan, feb, mar, any
+%
+% 6. MOON REQUIREMENT
+% Valid values: d, g, n
+%
+% 7. SEEING REQUIREMENT
+% Valid values: 0.4, 0.6, 0.8, 1.0, 1.2, 1.4, n
+%
+% 8. TRANSPARENCY REQUIREMENT
+% Valid values: CLR, PHO, THN
+%
+% 9. OBSERVING MODE
+% Valid values: v, s
+%
+% 10. RUN TYPE
+% Valid values: TOO 
+% For all Normal & Calibration Programmes this field should be blank.
+% For TOO & GTO Programmes, users can specify TOO runs.
+% If the field is left blank a default normal, non-TOO run is assumed.
+% If a TOO run is specified please make sure that you fill in the TOO page.
+
+
+
+\ObservingRun{A}{100}{VIRCAM}{15h}{oct}{g}{1.2}{THN}{s}{}
+\ObservingRun{B}{100}{VIRCAM}{15h}{oct}{n}{1.2}{THN}{s}{}
+
+
+% Proprietary time requested.
+% Valid values: % 0, 1, 2, 6, 12
+
+\ProprietaryTime{0}
+
+%---- BOX 4 ------------------------------------------------------------
+%
+% Indicate below the telescope(s) and number of nights/hours already
+% awarded to this programme, if any.
+% This macro is optional and can be commented out.
+% It is also NOT checked at the pdfLaTeX compilation.
+
+%\AwardedNights{NTT}{4n in 98.B-1234}
+
+% Indicate below the telescope(s) and number of nights/hours still
+% necessary, in the future, to complete this programme, if any.
+% This macro is optional and can be commented out.
+% It is also NOT checked at the pdfLaTeX compilation.
+
+%\FutureNights{UT2}{20h}
+
+%---- BOX 5 ------------------------------------------------------------
+%
+% Take advantage of this box to provide any special remark  (up to three
+% lines). In case of coordinated observations with XMM, please specify
+% both the ESO period and the preferred month for the XMM
+% observations here.
+% This macro is optional and can be commented out.
+% It is also NOT checked at the pdfLaTeX compilation.
+
+\SpecialRemarks{Associated observations of the same fields with VST are already in the KiDS public survey queue.}
+  
+%---- BOX 6 ------------------------------------------------------------
+% Please provide the ESO User Portal username for the Principal
+% Investigator (PI) in the \PI field.
+%
+% For the Co-I's (CoI) please fill in the following details:
+% First and middle initials, family name, the institute code
+% corresponding to their affiliation. 
+% The corresponding affiliation should be entered for EACH
+% Co-I separately in order to ensure the correct details of 
+% all Co-I's are stored in the ESO database.
+% You can find all institute codes listed according to country
+% on the following webpage:
+% http://www.eso.org/sci/observing/phase1/countryselect.html
+%
+% For example, if the Co-I's full name is David Alan William Jones,
+% his affiliation is the Observatoire de Paris, Site de Paris, 
+% you should write:
+% \CoI{D.A.W.}{Jones}{1588}
+% Further examples are shown below.
+% DO NOT USE ANY TEX/LATEX MACROS HERE
+%
+
+\PI{KKUIJKEN} 
+% Replace with PI's ESO User Portal username.
+
+\CoI{H.}{Hildebrandt}{1108}
+\CoI{M.}{Bilicki}{1716}
+\CoI{A.}{Edge}{1237}
+\CoI{T.}{Erben}{1108}
+\CoI{L.}{Guzzo}{1338}
+\CoI{C.}{Heymans}{1649}
+\CoI{C.}{Morrison}{2063}
+\CoI{W.}{Sutherland}{1126}
+\CoI{A.}{Wright}{1108}
+% Please note: 
+% Due to the way in which the proposal receiver system parses
+% the CoI macro, the number of pairs of curly brackets '{}'
+% in this macro MUST be strictly equal to 3, i.e., the
+% number of parameters of the macro. Accordingly, curly
+% brackets should not be used within the parameters (e.g.,
+% to protect LaTeX signs).
+%
+% For instance:
+% \CoI{L.}{Ma\c con}{1098}
+% \CoI{R.}{Men\'endez}{1098}
+%
+% are valid, while
+%
+% \CoI{L.}{Ma{\c}con}{1098}
+% \CoI{R.}{Men{\'}endez}{1098}
+%
+% are not. Unfortunately the receiver does not give an
+% explicit error message when such invalid forms are
+% used in the CoI macro, but the processing of the proposal
+% keeps hanging indefinitely.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% THE TWO PAGES OF THE SCIENTIFIC DESCRIPTION AND FIGURES %%%%%%%%%%
+%%%%%%%%%%%%%%%%%&&&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%---- BOX 7 ------------------------------------------------------------
+%
+%               THIS DESCRIPTION IS RESTRICTED TO TWO PAGES 
+%
+%   THE RELATIVE LENGTHS OF EACH OF THE SECTIONS ARE VARIABLE,
+%   BUT THEIR SUM (INCLUDING FIGURES & REFS.) IS RESTRICTED TO TWO PAGES
+%
+% All macros in this box are NOT checked at the pdfLaTeX compilation.
+
+\ScientificRationale{Our cosmological model, $\Lambda$CDM, is sufficiently strange that, despite its great success describing the Universe, it warrants stringent testing. Gravitational lensing by large scale structure, a.k.a. cosmic shear, is one of the most direct probes that we can use. Cosmic shear surveys have now progressed to the point that the accuracy with which they measure the relevant cosmological parameters can compete with the best other probes, including CMB experiments. In particular lensing can precisely measure the amount of clustered matter, summarized in the parameter $S_8\equiv \sigma_8 \sqrt{\Omega_m/0.3}$. Intriguingly, most cosmic shear measurements (but not all) measure $S_8$ values that are significantly lower than what is predicted by the best-fit $\Lambda$CDM model from the Planck CMB mission (Kilbinger et al. 2015).
+
+Combining galaxy shape measurements with photometric redshifts (photo-$z$) adds the vital 3D information that sets the physical scale for the observed weak lensing distortions (the amplitude of the weak lensing distortion depends on the angular diameter distances to lens and source). Knowing the redshift {\em distribution} of the galaxies is essential, even if individual photo-$z$ are noisy. Because percent-level errors in the mean redshift have significant effects on the cosmological parameter inference, calibrating these $N(z)$'s against spectroscopic redshifts is unavoidable. 
+
+The most recent cosmic shear measurement, shown in green in Fig.~1, is from an analysis of the first one-third of the data from our ESO-led Kilo-Degree Survey (KiDS) on the VST (Kuijken et al 2015; Hildebrandt et al. 2017 $\equiv$ H17), and its constraints on $S_8$ are in tension at the $\sim2.5\sigma$ level with Planck (2015). KiDS observations continue, and analysis of a data set double the size of H17 (some 900 square degrees) is starting up. Another very significant improvement over H17 that is already well underway is the addition of near-infrared data from the overlapping VIKING survey, which covers the same sky as KiDS, and was completed on VISTA last year.
+
+In H17 we have classified KiDS galaxies into four tomographic bins, based on the best-fit template-fitting photo-$z$ using the well-known BPZ code. There are two possible strategies for obtaining the $N(z)$ for each of these bins: directly reweighting spectroscopic redshift catalogues so that they reproduce the distribution of galaxy magnitudes and colours using a $k$-nearest-neighbour technique (DIR); or cross-correlating KiDS galaxy positions with thin redshift slices of an overlapping spectroscopic redshift catalogue and thus deducing the fraction of KiDS galaxies at each redshift (CC). The methods are complementary. DIR requires a very deep spectroscopic redshift catalogue that spans the full magnitude range of the KiDS galaxies; on the other hand CC requires a very large galaxy population that overlaps in redshift, but does not have to be as deep as the reference sample. In the KiDS-450 analysis our CC calibration relied on just 1.5 square degrees of suitable spectroscopic data, and the errors (grey contours in Fig.~1) were consequently large. Only optical data were used.
+}
+
+\ImmediateObjective{%Explain choice of field, and why we need the area we request. Argument is that CC error over redshift range beyond GAMA is 3x larger than DIR, so need to increase area by $3^2=10\times$.
+
+Our immediate objective is to firm up the calibration of the photo-$z$ for KiDS, for both the CC and DIR approaches. Such an improvement is necessary to (i) ensure proper validation of the KiDS-450 calibration, and (ii) prepare for the next installment of KiDS and other cosmic shear surveys, where the requirements on the photo-$z$ are even more stringent.
+
+Specifically, we will (i)
+bring the accuracy of the CC calibration into line with what we achieved with DIR, by incorporating large-area spectroscopic fields; (ii) 
+reduce the sensitivity of the DIR method to sample variance by adding two widely separated deep calibration fields; and (iii)
+improve the overall quality of the photo-$z$ estimates (used to define the tomographic bins) by including VIKING data (see Fig.~2), which will enable us to define a fifth tomographic bin beyond redshift 0.9. Adding this fifth high-$z$ bin will increase the volume and hence the statistical power of KiDS by an estimated 20\%.
+
+Rather than embarking on a massive spectroscopic survey of KiDS galaxies, it is much more efficient to obtain KiDS- and VIKING-like photometry for areas of the sky where such redshifts have already been obtained. 
+Bringing the CC accuracy to the level of DIR (see Fig.1) requires a tenfold increase in the area covered with deep spectra, from 1.5 to 15 sq.deg. At lower $z$ we can use the GAMA, BOSS, and 2dFLenS (Blake et al 2016) surveys, which overlap with KiDS/VIKING observations, but beyond the GAMA/BOSS/2dFLenS redshift limit of $z\sim$0.7 new data are required. The VIPERS survey (Scodeggio et al 2016) is ideal for this purpose: it covers a large area, its depth of I=22.5 is well-matched to KiDS, and its photometric preselection ensures that it contains mostly galaxies between redshifts 0.5 and 1.2 (Fig.~3). The VVDS (LeFevre et al 2013) shares a lot of these properties and adds more lines-of-sight to reduce the crucial sample variance in this calibration sample.
+
+For all fields mentioned above (from VIPERS and VVDS) KiDS observations are already scheduled on the VST and being taken; here we request the corresponding VIKING-like VISTA data.
+
+\medskip
+%Apart from the cosmology science case outlined above, we point out the significant legacy value of near-IR imaging data on VIPERS, which -- somewhat surprisingly -- is lacking. In particular, these data will allow robust stellar mass estimates to be obtained for all VIPERS galaxies through SED fitting, resulting in an accurate measurement of the stellar mass function out to redshift 1 for galaxies down to $10^{10}M_\odot$. VISTA is uniquely able to provide such measurements in a few nights.
+Apart from the cosmology science case outlined above, we point out the significant legacy value of near-IR imaging data on VIPERS. Some useful WIRCAM coverage exists (mostly $K\!s$ band, Moutard et al 2016a,b), but the proposed 5-band VISTA data will significantly improve stellar mass estimates of VIPERS galaxies, resulting in an accurate measurement of the stellar mass function out to redshift 1 for galaxies down to $10^{10}M_\odot$.
+
+\medskip
+{\small{\bf References:} Blake et al 2016, MN 462, 4240; Hildebrandt et al 2017, MN 465, 1454 (H17); Kilbinger 2015, RPPh 78, 6901; Kuijken et al 2015, MN 454, 3500; LeFevre et al 2013, A\&A 559, 14; Moutard et al 2016a/b,  A\&A 590, 102/3; Planck Collaboration 2015, A\&A 594, 13; Scodeggio et al 2016, arXiv:1611.07048}
+ } 
+
+%
+%---- THE SECOND PAGE OF THE SCIENCE CASE CAN INCLUDE FIGURES ----------
+%
+% Up to ONE page of figures can be added to your proposal.  
+% The text and figures of the scientific description must not
+% exceed TWO pages in total. 
+% If you use color figures, do make sure that they are still readable
+% if printed in black and white. Figures must be in PDF or JPEG format.
+% Each figure has a size limit of 1MB.
+% MakePicture and MakeCaption are optional macros and can be commented out.
+
+%\MakePicture{galaxy.pdf}{angle=90,width=10cm}
+%\MakeCaption{Fig.~1: A caption for your figure can be inserted here.}
+
+
+%\MakePicture{banana_DIR_vs_CC_vs_Planck.pdf}{height=5cm}
+%% Should we try to include the Kilbinger compilation as well? 
+%%\MakePicture{S8_Kilbinger_update_annotated.png}{height=6cm}
+%\MakeCaption{Fig.~1: Cosmology constraints from KiDS-450 using the different photometric redshift calibration strategies. Note the tension between Planck and the most precise (DIR) calibration. The aim of this proposal is to reduce the CC errors by a factor of $\sqrt{10}$ to bring them in line with the DIR calibration accuracy, and to prepare for the analysis of the next, twice as extensive, KiDS lensing data.}
+
+%\MakePicture{ESO_prop_plot_zdist.pdf}{height=5cm}
+%\MakeCaption{Fig.~2: Numbers of spectroscopic redshifts available in GAMA, VIPERS and SDSS, vs. the number that were used in the KiDS-450 CC calibration of Hildebrandt et al. (2017). GAMA and SDSS overlap with KiDS and will be used at $z<0.7$; with the proposed KiDS/VIKING-like imaging of the VIPERS area we will be able to do the same at higher redshift. }
+
+%fig 1 with caption to the side
+\MakePicture{testfig1.pdf}{width=16.7cm,trim=2cm 11cm 1.8cm 11.5cm,clip}
+\MakePicture{KiDS_zz.jpg}{height=5.9cm}
+\MakeCaption{Fig.~2: Photo-$z$ ($Z_{\rm B}$) vs. spectroscopic redshifts using optical-only as in H17 (\emph{left}) and using optical and near-infrared data (\emph{right}) including recently obtained ESO DDT data and an updated BPZ setup. The numbers correspond to the normalised median-absolute-deviation (NMAD) of the quantity $(z_{\rm spec}-Z_{\rm B})/(1+z_{\rm spec}) \equiv \Delta z/(1+z)$ and the rate of objects with $|\Delta z/(1+z)|>0.15$ for all objects as well as for objects with photo-$z$ $Z_{\rm B}>0.9$ (i.e. the new 5th tomographic bin). The near-infrared data improve on all of these statistics, in particular for high-redshifts that weren't used in H17 but will be usable with the data from this proposal.}
+%fig 2 with caption to the side
+\MakePicture{testfig2.pdf}{width=16.7cm,trim=2cm 11cm 1.8cm 12.cm,clip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% THE PAGE OF TECHNICAL JUSTIFICATIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%---- BOX 8 ------------------------------------------------------------
+%
+% Provide below a careful justification of the requested lunar phase
+% and of the requested number of nights or hours.  
+% All macros in this box are NOT checked at the pdfLaTeX compilation.
+
+\WhyLunarPhase{No restrictions on the lunar phase are required for observations in the $H$- and $K\!s$-bands. For $Z$ and $Y$ we require grey time, and we split the $J$-band exposures into two halves, one half in grey time and one half without restrictions. This follows closely the VIKING observing strategy.}
+
+\WhyNights{We have requested the number of hours required to observe a single VISTA `tile' over each of the target fields listed in Sect.~11, using the same observation strategy as is  implemented in VIKING. Total exposure times and magnitude limits per filter in VIKING are:
+
+\vspace{0.5cm}
+\begin{tabular}{rrr}
+filter & exp. time & lim.mag. \\
+& [s] & ($5\sigma$ AB 2$''$)\\
+\hline
+$Z$ & 480  &22.7\\
+$Y$ & 400 & 22.0\\
+$J$ & 400  & 21.8\\
+$H$ & 300  & 21.1\\
+$K\!s$ & 480  & 21.2\\
+\hline
+total & 2060\\
+\end{tabular}
+
+%23.1, 22.3, 22.1, 21.5 and 21.2  according to Msgr article. ETC suggests otherwise
+%Rel.Notes to DR2 give 21.4 20.6 20.1 19.0 18.6 as 10-sig VEGA
+%Blanton et al give AB-VEGA = .54 (.7) .91 1.39 1.85
+% suggests 5-sigma AB limits 22.6 22.0 21.7 21.1 21.1
+
+\vspace{0.5cm}
+In order to attain these exposure times over a uniform area requires a six-step dither strategy that results in the majority of the area being covered by two dithers. Hence the required time on the telescope is three times as large, 6180s. With overheads we expect to be able to observe each field in 2.5h resulting in a total time request of 30h for our program. This time estimate is directly based on the most recent version of VIKING OBs.
+
+\vspace{0.5cm}
+(Note that, as for the VIKING main survey, the OB's have an executing time that slightly exceeds the 1h limit. In the interests of efficiency we will therefore request the same waiver that was granted for the VIKING observations.)
+}
+
+\TelescopeJustification{The purpose of these observations is to create an optical+near-IR KiDS+VIKING equivalent dataset covering multiple fields with existing deep spectroscopic redshift data. As such, we require observations to be done using the same instruments, observing strategy and sky conditions, as KiDS and VIKING. Optical $ugri$ KiDS-like observations of the fields are already in the VST queue. This request covers the corresponding $ZYJHK\!s$ VIKING-like VISTA observations.} 
+
+\ModeJustification{N/A}
+
+
+% Please specify the type of calibrations needed.
+% In case of special calibration the second parameter is used to enter 
+% specific details.
+% Valid values: standard, special
+%\Calibrations{special}{Adopt a special calibration}
+\Calibrations{standard}{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PAGE OF BOXES 9-10  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%---- BOX 9 -- Use of ESO Facilities --------------------------------
+%
+% This macro is optional and can be commented out.
+% It is also NOT checked at the pdfLaTeX compilation.
+% LastObservationRemark: Report on the use of the ESO facilities during
+%  the last 2 years (4 observing periods). Describe the status of the
+%  data obtained and the scientific output generated.
+
+\LastObservationRemark{
+This proposal is part of the KiDS public survey team's effort to measure the growth of large-scale structure from weak lensing, and to use this information to study the cosmological model. KiDS+VIKING has been ongoing on the VST and VISTA for the past five years, and has resulted in over 20 papers already (see http://kids.strw.leidenuniv.nl/papers.php): most pertinent to this proposal are the papers by Hildebrandt et al. (2017) and Joudaki et al. (2017), which show our cosmology constraints based on the first 450 square degrees of KiDS-only lensing data. Analysis of  900 square degrees of KiDS+VIKING is now underway, and will require the added fidelity of the photometric redshift calibration that the present proposal enables.
+
+All KiDS and VIKING data are released via the ESO archive and publicly available.
+
+A DDT proposal, similar to this one but observing only two tiles (overlapping with the DEEP2 redshift survey), was submitted in November 2016 and observations were finished in December. The data have been analysed and included in the KiDS+VIKING photo-z calibration. The results in the right-hand panel of Fig.~2 are directly based on these data.
+}
+
+%
+%---- BOX 9a -- ESO Archive ------------------------------------------
+%
+% Are the data requested in this proposal in the ESO Archive
+% (http://archive.eso.org)? If yes, explain the need for new data.
+% This macro is NOT checked at the pdfLaTeX compilation.
+
+\RequestedDataRemark{
+There are some $JHK\!s$ pointings from the VISTA public survey VHS that cover our fields, but they are too shallow. In addition some parts of W1 are covered by VIDEO in $ZYJHK\!s$, which we would not have to repeat. Unfortunately the placement of these tiles is not optimal for mapping this VIPERS patch.
+
+\medskip
+We have also checked the CFHT WIRCAM archive. WIRCAM has a 4x smaller footprint than VIRCAM, but it has also been used to cover parts of VIPERS. $K\!s$ band coverage exists for VIPERS DR1, as well as somewhat too shallow Y band observations and sporadic shallow J and H images. We considered skipping $K\!s$ band in this proposal, but prefer to ensure instrumental homogeneity as well as the more robust photometric calibration that is possible with the larger VISTA footprint. Our VVDS fields have no WIRCAM coverage.
+}
+
+%
+%---- BOX 9b -- ESO GTO/Public Survey Programme Duplications---------
+%
+% If any of the targets/regions in ongoing GTO Programmes and/or
+% Public Surveys are being duplicated here, please explain why.
+% This macro is optional and can be commented out.
+% It is also NOT checked at the pdfLaTeX compilation.
+
+%\RequestedDuplicateRemark{}
+
+%
+%---- BOX 10 ------ Applicant(s) publications ---------------------
+%
+% Applicant's publications related to the subject of this proposal
+% during the past two years.  Use the simplified abbreviations for
+% references as in A&A.  Separate each reference with the following
+% usual LaTex command: \smallskip\\
+%   
+%   Name1 A., Name2 B., 2001, ApJ, 518, 567: Title of article1
+%   \smallskip\\
+%   Name3 A., Name4 B., 2002, A\&A, 388, 17: Title of article2
+%   \smallskip\\
+%   Name5 A. et al., 2002, AJ, 118, 1567: Title of article3
+%
+% This macro is NOT checked at the pdfLaTeX compilation.
+
+\Publications{
+Hildebrandt H. et al., 2017, MNRAS, 465, 1454: {\bf KiDS-450: Cosmological parameter constraints from tomographic weak gravitational lensing}    \smallskip\\
+Joudaki A. et al, MNRAS, submitted (arXiv:1610.04606): {\bf KiDS-450: Testing extensions to the standard cosmological model}  \smallskip\\
+Kuijken K. et al, MNRAS, 2015, 454, 3500: {\bf Gravitational lensing analysis of the Kilo Degree Survey} \smallskip\\
+de Jong J.T.A. et al., A\&A, submitted (arXiv:1703.02991): {\bf The third data release of the Kilo-Degree Survey and associated data products}\smallskip\\
+Morrison C. et al., MNRAS, 2017, 467, 3576: {\bf the-wizz: clustering redshift estimation for everyone}\smallskip\\
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% THE PAGE OF THE TARGET/FIELD LIST %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%---- BOX 11 -----------------------------------------------------------
+%
+% Complete list of targets/fields requested.  The macro takes nine
+% parameters: run ID, target field/name, RA, Dec, time on target, magnitude, 
+% diameter, additional information, reference star.
+%
+% 1. RUN ID
+% Valid values: run IDs specified in BOX 3
+%
+% 2. TARGET FIELD/NAME
+%
+% 3. RA (J2000)
+% Format: hh mm ss.f, or hh mm.f, or hh.f
+% Use 00 00 00 for unknown coordinates
+% This parameter is NOT checked at the pdfLaTeX compilation.
+% 
+% 4. Dec (J2000)
+% Format: dd mm ss, or dd mm.f, or dd.f
+% Use 00 00 00 for unknown coordinates
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 5. TIME ON TARGET
+% Format: hours (overheads and calibration included)
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 6. MAGNITUDE
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 7. ANGULAR DIAMETER
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 8. ADDITIONAL INFORMATION
+% Any relevant additional information may be inserted here.
+% For APEX and CRIRES runs, the requested PWV upper limit MUST
+% be specified for each target using this field.
+% For APEX runs, the acceptable LST range MUST also be specified here.
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 9. REFERENCE STAR ID
+% See Users' Manual.
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% Long lists of targets will continue on the last page of the
+% proposal.
+%
+%                       ** VERY IMPORTANT ** 
+% The scheduling of your programme will take into account ALL targets
+% given in this list. INCLUDE ONLY TARGETS REQUESTED FOR P100 
+% (except for runs outside P100, e.g. for VLT-XMM and Monitoring proposals).
+%
+% DO NOT USE ANY TEX/LATEX MACROS FOR THE TARGETS
+
+\Target{A}{VIPERS-W1}{02 07 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 1, ZYJ}{}
+\Target{A}{VIPERS-W1}{02 13 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 2, ZYJ}{}
+\Target{A}{VIPERS-W1}{02 19 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 3, ZYJ}{}
+\Target{A}{VIPERS-W1}{02 25 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 4, ZYJ}{}
+\Target{A}{VIPERS-W1}{02 31 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 5, ZYJ}{}
+
+\Target{A}{VIPERS-W4}{22 03 08}{01 52 00}{1.25}{}{1.5d}{Pointing 1, ZYJ}{}
+\Target{A}{VIPERS-W4}{22 09 08}{01 52 00}{1.25}{}{1.5d}{Pointing 2, ZYJ}{}
+\Target{A}{VIPERS-W4}{22 15 08}{01 52 00}{1.25}{}{1.5d}{Pointing 3, ZYJ}{}
+
+\Target{A}{VVDSF10}{10 04 20}{02 00 00}{1.25}{}{1.5d}{single pointing,
+ZYJ}{}
+\Target{A}{VVDSF14}{13 59 35}{05 07 00}{1.25}{}{1.5d}{single pointing,
+ZYJ}{}
+\Target{A}{VVDSF22}{22 18 00}{-00 06 00}{1.25}{}{1.5d}{Pointing 1, ZYJ}{}
+\Target{A}{VVDSF22}{22 18 00}{00 54 00}{1.25}{}{1.5d}{Pointing 2, ZYJ}{}
+\Target{B}{VIPERS-W1}{02 07 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 1, JHKs}{}
+\Target{B}{VIPERS-W1}{02 13 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 2, JHKs}{}
+\Target{B}{VIPERS-W1}{02 19 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 3, JHKs}{}
+\Target{B}{VIPERS-W1}{02 25 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 4, JHKs}{}
+\Target{B}{VIPERS-W1}{02 31 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 5, JHKs}{}
+
+\Target{B}{VIPERS-W4}{22 03 08}{01 52 00}{1.25}{}{1.5d}{Pointing 1, JHKs}{}
+\Target{B}{VIPERS-W4}{22 09 08}{01 52 00}{1.25}{}{1.5d}{Pointing 2, JHKs}{}
+\Target{B}{VIPERS-W4}{22 15 08}{01 52 00}{1.25}{}{1.5d}{Pointing 3, JHKs}{}
+
+\Target{B}{VVDSF10}{10 04 20}{02 00 00}{1.25}{}{1.5d}{single pointing, JHKs}{}
+\Target{B}{VVDSF14}{13 59 35}{05 07 00}{1.25}{}{1.5d}{single pointing, JHKs}{}
+\Target{B}{VVDSF22}{22 18 00}{-00 06 00}{1.25}{}{1.5d}{Pointing 1, JHKs}{}
+\Target{B}{VVDSF22}{22 18 00}{00 54 00}{1.25}{}{1.5d}{Pointing 2, JHKs}{}
+
+
+
+%                      ***************** 
+%                      ** PWV limits **
+% For CRIRES and all APEX instruments users must specify the PWV upper
+% limits for each target. For example:
+%\Target{}{Alpha CMa}{06 45 08.9}{-16 42 58}{1}{-1.4}{6 mas}{PWV=1.0mm, Sirius}{}
+%\Target{}{HD 104237}{12 00 05.6}{-78 11 33}{1}{}{}{PWV<0.7mm;LST=9h00-15h00}{}
+%
+%                      *****************
+
+% Use TargetNotes to include any comments that apply to several or all
+% of your targets.
+% This macro is NOT checked at the pdfLaTeX compilation.
+
+\TargetNotes{We follow the observing strategy of the VIKING main survey: we split the observations into two OBs, with observations in 3 filters each. The reddest bands can be done in bright time. J band observations are split between the two OBs for added robustness of the photometric calibration.\\
+The VIPERS observations do not cover the entire VIPERS area, but target two stripes which contain ten times as many galaxies with spectroscopic redshifts down to $i=22.5$ as are available in VISTA fields thus far.\\
+The VVDS fields provide about twice as many targets per unit area as VIPERS, with no photo-z preselection, and so are better suited to firming up the DIR calibration but will also be used in the CC calibration.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% TWO PAGES OF SCHEDULING REQUIREMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%---- BOX 12 -----------------------------------------------------------
+%
+
+% Uncomment the following line if the proposal involves time-critical
+% observations, or observations to be performed at specific time
+% intervals. Please leave these brackets blank. Details of time
+% constraints can be entered in Special Remarks and using the
+% other flags in Box 13.
+%
+%
+%\HasTimingConstraints{}
+
+%
+% The timing constraint macros listed below 
+% are optional and can be commented out:
+% \HasTimingConstraints, \RunSplitting, \Link and \TimeCritical
+% They are also NOT checked at the pdfLaTeX compilation.
+
+
+% 1. RUN SPLITTING, FOR A GIVEN ESO TELESCOPE (Visitor Mode only)
+%
+% 1st argument: run ID
+% Valid values: run IDs specified in BOX 3
+%
+% 2nd argument: run splitting requested for sub-runs
+% This parameter is NOT checked at the pdfLaTeX compilation.
+
+%\RunSplitting{B}{1,10s,1}
+%\RunSplitting{C}{2,10s,2,20w,2,15s,4H2}
+
+
+% 2. LINK FOR COORDINATED OBSERVATIONS BETWEEN DIFFERENT RUNS.
+%\Link{B}{after}{A}{10}
+%\Link{C}{after}{B}{}
+%\Link{E}{simultaneous}{F}{}
+
+% 3. UNSUITABLE PERIOD(S) OF TIME
+%
+% 1st argument: run ID
+% Valid values: run IDs specified in BOX 3
+%
+% 2nd argument: Chilean start date for the unsuitable time
+% Format: dd-mmm-yyyy
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 3rd argument: Chilean end date for the unsuitable time
+% Format: dd-mmm-yyyy
+% This parameter is NOT checked at the pdfLaTeX compilation.
+
+%\UnsuitableTimes{A}{15-jan-18}{18-jan-18}{Insert explanation of unsuitable time here.}
+%\UnsuitableTimes{B}{15-jan-18}{18-jan-18}{Insert explanation of unsuitable time here.}
+%\UnsuitableTimes{C}{20-jan-18}{23-jan-18}{Insert explanation of unsuitable time here.}
+
+
+%
+%---- BOX 12 contd.. -- Scheduling Requirements 
+%
+
+% SPECIFIC DATE(S) FOR TIME-CRITICAL OBSERVATIONS
+% Please note: The dates must correspond to the LOCAL CHILEAN observing dates.
+%
+% The 2nd and 3rd parameters are NOT checked at the pdfLaTeX compilation.
+% 1st argument: run ID
+% Valid values: run IDs specified in BOX 3
+%
+% 2nd argument: Chilean start date for the critical period.
+% Format: dd-mmmm-yyyy 
+%
+% 3rd argument: Chilean end date for the critical period.
+% Format: dd-mmmm-yyyy
+
+%\TimeCritical{A}{12-nov-17}{14-nov-17}{Insert reason for time-critical observations.}
+%\TimeCritical{D}{1-nov-17}{2-nov-17}{Insert reason for time-critical observations.}
+%\TimeCritical{D}{17-nov-17}{18-nov-17}{Insert reason for time-critical observations.}
+%\TimeCritical{D}{23-nov-17}{24-nov-17}{Insert reason for time-critical observations.}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%---- BOX 14 -----------------------------------------------------------
+%
+% INSTRUMENT CONFIGURATIONS:
+%
+% Uncomment only the lines related to instrument configuration(s)
+% needed for the acquisition of your planned observations.
+%
+% 1st argument: run ID
+% Valid values: run IDs specified in BOX 3
+%
+% 2nd argument: instrument
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 3rd argument: mode
+% This parameter is NOT checked at the pdfLaTeX compilation.
+% Please note that RRM mode is only available for some specific
+% instrument configurations.
+%
+% 4th argument: additional information
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% All parameters are mandatory and cannot be empty. Do NOT specify
+% Instrument Configurations for alternative runs.
+
+% Examples (to be commented or deleted)
+
+%
+% Real list of instrument configurations
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Paranal
+%
+%-----------------------------------------------------------------------
+%---- NAOS/CONICA at the VLT-UT1 (ANTU)  -------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{NACO}{PRE-IMG}{provide list of filters HERE}
+%
+% Specify the NGS name, distance from target and magnitude  
+%(Vmag preferred, otherwise Rmag) in the target list,
+% and uncomment the following line
+%\INSconfig{}{NACO}{NGS}{-}
+%
+%\INSconfig{}{NACO}{Special Cal}{Select if you have special calibrations}
+%\INSconfig{}{NACO}{Pupil Track}{Select if you need pupil tracking mode}
+%\INSconfig{}{NACO}{Cube}{Select if you need cube mode}
+%
+%\INSconfig{}{NACO}{SAM VIS-WFS}{Provide list of masks and filters HERE}
+%\INSconfig{}{NACO}{SAM IR-WFS}{Provide list of masks and filters HERE}
+%\INSconfig{}{NACO}{SAMPol VIS-WFS}{Provide list of masks and filters HERE}
+%\INSconfig{}{NACO}{SAMPol IR-WFS}{Provide list of masks and filters HERE}
+%
+%\INSconfig{}{NACO}{IMG 54 mas/px IR-WFS}{provide list of filters HERE}
+%\INSconfig{}{NACO}{IMG 27 mas/px IR-WFS}{provide list of filters HERE}
+%\INSconfig{}{NACO}{IMG 13 mas/px IR-WFS}{provide list of filters HERE}
+%\INSconfig{}{NACO}{IMG 54 mas/px VIS-WFS}{provide list of filters HERE}
+%\INSconfig{}{NACO}{IMG 27 mas/px VIS-WFS}{provide list of filters HERE}
+%\INSconfig{}{NACO}{IMG 13 mas/px VIS-WFS}{provide list of filters HERE}
+%
+%\INSconfig{}{NACO}{CORONA AGPM VIS-WFS}{provide list of filters (L',NB-3.74,NB-4.05) HERE}
+%\INSconfig{}{NACO}{CORONA AGPM IR-WFS}{provide list of filters (L',NB-3.74,NB-4.05) HERE}
+%
+%\INSconfig{}{NACO}{POL 54 mas/px IR-WFS}{provide list of filters HERE}
+%\INSconfig{}{NACO}{POL 27 mas/px IR-WFS}{provide list of filters HERE}
+%\INSconfig{}{NACO}{POL 13 mas/px IR-WFS}{provide list of filters HERE}
+%\INSconfig{}{NACO}{POL 54 mas/px VIS-WFS}{provide list of filters HERE}
+%\INSconfig{}{NACO}{POL 27 mas/px VIS-WFS}{provide list of filters HERE}
+%\INSconfig{}{NACO}{POL 13 mas/px VIS-WFS}{provide list of filters HERE}
+%
+%
+
+%-----------------------------------------------------------------------
+%---- FORS2 at the VLT-UT1 (ANTU) --------------------------------------
+%-----------------------------------------------------------------------
+%If you require the E2V (Blue) detector uncomment the following line
+%\INSconfig{}{FORS2}{Detector}{E2V}
+%
+%If you require the MIT (RED) detector uncomment the following line
+%\INSconfig{}{FORS2}{Detector}{MIT}
+%
+% If you require the High-Resolution  collimator uncomment the following line
+%\INSconfig{}{FORS2}{collimator}{HR}
+%
+% Uncomment the line(s) corresponding to the imaging mode(s) you require and
+% provide the list of filters needed  for your observations:
+%
+%\INSconfig{}{FORS2}{PRE-IMG}{ESO filters: provide list HERE}
+%\INSconfig{}{FORS2}{IMG}{ESO filters: provide list HERE}
+%\INSconfig{}{FORS2}{IMG}{User's own filters (to be described in text)}
+%\INSconfig{}{FORS2}{IPOL}{ESO filters: provide list HERE}
+%\INSconfig{}{FORS2}{IPOL}{User's own filters (to be described in text)}
+%\INSconfig{}{FORS2}{HIT-MS}{Provide list of grisms HERE}
+%
+%
+% Uncomment the line(s) corresponding to the spectroscopic mode(s) you require and
+% provide the list of grism+filter combination needed  for your observations:
+%
+%\INSconfig{}{FORS2}{LSS}{Provide list of grism+filter combinations HERE}
+%\INSconfig{}{FORS2}{MOS}{Provide list of grism+filter combinations HERE}
+%\INSconfig{}{FORS2}{PMOS}{Provide list of grism+filter combinations HERE}
+%\INSconfig{}{FORS2}{MXU}{Provide list of grism+filter combinations HERE}
+%\INSconfig{}{FORS2}{HITI}{ESO filters: provide list HERE}
+%\INSconfig{}{FORS2}{HIT-OS}{Provide list of grisms HERE}
+%
+% Uncomment the following line for Rapid Response Mode observations
+%
+%\INSconfig{}{FORS2}{RRM}{yes}
+%
+% Uncomment the following line for use of the Virtual Image Slicer
+%\INSconfig{}{FORS2}{Virtual Image Slicer}{VM only}
+%-----------------------------------------------------------------------
+%---- KMOS at the VLT-UT1 (ANTU) ---------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{KMOS}{IFU}{provide list of settings (IZ, YJ, H, K, HK) here} 
+%
+%-----------------------------------------------------------------------
+%---- FLAMES at the VLT-UT2 (KUEYEN) -----------------------------------
+%-----------------------------------------------------------------------
+%\INSconfig{}{FLAMES}{UVES}{Specify the UVES setup below}
+%\INSconfig{}{FLAMES}{GIRAFFE-MEDUSA}{Specify the GIRAFFE setup below}
+%\INSconfig{}{FLAMES}{GIRAFFE-IFU}{Specify the GIRAFFE setup below}
+%\INSconfig{}{FLAMES}{GIRAFFE-ARGUS}{Specify the GIRAFFE setup below}
+%\INSconfig{}{FLAMES}{Combined: UVES + GIRAFFE-MEDUSA}{Specify the UVES and
+%GIRAFFE setups below}
+%\INSconfig{}{FLAMES}{Combined: UVES + GIRAFFE-IFU}{Specify the UVES and
+%GIRAFFE setups below}
+%\INSconfig{}{FLAMES}{Combined: UVES + GIRAFFE-ARGUS}{Specify the UVES and
+%GIRAFFe setups below}
+%
+%
+% If you have selected UVES, either standalone or in combined mode,
+% please specify the UVES standard setup(s) to be used
+%\INSconfig{}{FLAMES}{UVES}{standard setup Red 520}
+%\INSconfig{}{FLAMES}{UVES}{standard setup Red 580}
+%\INSconfig{}{FLAMES}{UVES}{standard setup Red 580 + simultaneous calibration}
+%\INSconfig{}{FLAMES}{UVES}{standard setup Red 860}
+%
+%\INSconfig{}{FLAMES}{GIRAFFE}{fast readout mode 625kHz VM only}
+%\INSconfig{}{FLAMES}{GIRAFFE}{slow readout mode 50kHz VM only}
+%
+% If you have selected GIRAFFE, either standalone or in combined mode
+% please specify the GIRAFFE standard setups(s) to be used
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR01 379.0}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR02 395.8}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR03 412.4}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR04 429.7}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR05 447.1 A}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR05 447.1 B}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR06 465.6}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR07 484.5 A}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR07 484.5 B}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR08 504.8}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR09 525.8 A}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR09 525.8 B}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR10 548.8}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR11 572.8}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR12 599.3}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR13 627.3}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR14 651.5 A}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR14 651.5 B}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR15 665.0}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR15 679.7}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR16 710.5}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR17 737.0 A}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR17 737.0 B}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR18 769.1}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR19 805.3 A}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR19 805.3 B}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR20 836.6 A}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR20 836.6 B}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR21 875.7}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR22 920.5 A}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup HR22 920.5 B}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup LR01 385.7}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup LR02 427.2}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup LR03 479.7}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup LR04 543.1}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup LR05 614.2}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup LR06 682.2}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup LR07 773.4}
+%\INSconfig{}{FLAMES}{GIRAFFE}{standard setup LR08 881.7}
+%
+%\INSconfig{}{FLAMES}{GIRAFFE}{fast readout mode 625kHz VM only}
+%
+%-----------------------------------------------------------------------
+%---- X-SHOOTER at the VLT-UT2 (KUEYEN)
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{XSHOOTER}{300-2500nm}{SLT}
+%\INSconfig{}{XSHOOTER}{300-2500nm}{IFU}
+%
+% Slits (SLT only):
+%
+%UVB arm, available slits in arcsec: 0.5, 0.8, 1.0, 1.3, 1.6, 5.0
+%VIS arm, available slits in arcsec: 0.4, 0.7, 0.9, 1.2, 1.5, 5.0 
+%NIR arm, available slits in arcsec: 0.4, 0.6, 0.6JH, 0.9, 0.9JH, 1.2, 5.0
+%  The 0.6JH and 0.9JH include a stray light K-band blocking filter
+%  that allow sky limited studies in J and H bands.
+%
+%The slits for IFU  are fixed and do not need to be mentioned here.
+%
+% Replace SLIT-UVB, SLIT-VIS, SLIT-NIR with the choice of the slits:
+%\INSconfig{}{XSHOOTER}{SLT}{SLIT-UVB,SLIT-VIS,SLIT-NIR}
+%
+% Detector readout mode:
+%
+% UVB and VIS arms: available readout modes and binning:
+% 100k-1x1, 100k-1x2, 100k-2x2, 400k-1x1, 400k-1x2, 400k-2x2
+% The NIR readout mode is fixed  to NDR.
+%
+%\INSconfig{}{XSHOOTER}{IFU}{readout UVB,readout VIS,readout NIR}
+%\INSconfig{}{XSHOOTER}{SLT}{readout UVB,readout VIS,readout NIR}
+%
+% Imaging mode 
+% replace 'list of filters' by the actual filters you wish to use among:
+% U, B, V, R, I, Uprime, Gprime, Rprime, Iprime, Zprime
+% Please note that the imaging mode can only be used in combination with slit or IFU observations
+%\INSconfig{}{XSHOOTER}{IMG}{list of filters}
+%
+%\INSconfig{}{XSHOOTER}{RRM}{yes}
+%
+%-----------------------------------------------------------------------
+%---- UVES at the VLT-UT2 (KUEYEN) -------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{UVES}{BLUE}{Standard setting: 346}
+%\INSconfig{}{UVES}{BLUE}{Standard setting: 437}
+%\INSconfig{}{UVES}{BLUE}{Non-std setting: provide central wavelength  HERE}
+%
+%\INSconfig{}{UVES}{RED}{Standard setting: 520}
+%\INSconfig{}{UVES}{RED}{Standard setting: 580}
+%\INSconfig{}{UVES}{RED}{Standard setting: 600}
+%\INSconfig{}{UVES}{RED}{Iodine cell standard setting: 600}
+%\INSconfig{}{UVES}{RED}{Standard setting: 860}
+%\INSconfig{}{UVES}{RED}{Non-std setting: provide central wavelength HERE}
+%
+%\INSconfig{}{UVES}{DIC-1}{Standard setting: 346+580}
+%\INSconfig{}{UVES}{DIC-1}{Standard setting: 390+564}
+%\INSconfig{}{UVES}{DIC-1}{Standard setting: 346+564}
+%\INSconfig{}{UVES}{DIC-1}{Standard setting: 390+580}
+%\INSconfig{}{UVES}{DIC-1}{Non-std setting: provide central wavelength HERE}
+%
+%\INSconfig{}{UVES}{DIC-2}{Standard setting: 437+860}
+%\INSconfig{}{UVES}{DIC-2}{Standard setting: 346+860}
+%\INSconfig{}{UVES}{DIC-2}{Standard setting: 390+860}
+%
+%\INSconfig{}{UVES}{DIC-2}{Standard setting: 437+760}
+%\INSconfig{}{UVES}{DIC-2}{Standard setting: 346+760}
+%\INSconfig{}{UVES}{DIC-2}{Standard setting: 390+760}
+%\INSconfig{}{UVES}{DIC-2}{Non-std setting: provide central wavelength HERE}
+%
+%\INSconfig{}{UVES}{Field Derotation}{yes}
+%\INSconfig{}{UVES}{Image slicer-1}{yes}
+%\INSconfig{}{UVES}{Image slicer-2}{yes}
+%\INSconfig{}{UVES}{Image slicer-3}{yes}
+%\INSconfig{}{UVES}{Iodine cell}{yes}
+%\INSconfig{}{UVES}{Longslit Filters}{Provide list of filters HERE}
+%
+%\INSconfig{}{UVES}{RRM}{yes}
+%
+%-----------------------------------------------------------------------
+%---- SPHERE at the VLT-UT3 (MELIPAL) -----------------------------------
+%-----------------------------------------------------------------------
+%
+%
+% Pupil or field tracking?
+% Mode choices: IRDIS-CI, IRDIS-DBI, 
+%               IRDIFS, IRDIFS-EXT, 
+%               ZIMPOL-I
+%               (Not relevant for IRDIS-DPI, IRDIS-LSS, ZIMPOL-P1 or ZIMPOL-P2)
+%--------------------
+% IRDIFS: 
+% Coronagraph combination choices:
+%   IRDIFS:     None, N-ALC-YJH-S, N-ALC-YJH-L, N-CLC-SW-L, N-SAM-7H
+%   IRDIFS-EXT: None, N-ALC-YJH-S, N-ALC-YJH-L, N-ALC-Ks, N-SAM-7H
+% Filter choices for IRDIS in IRDIFS mode
+%   IRDIFS:     DB-H23, DB-ND23, DB-H34, BB-H
+%   IRDIFS-EXT: DB-K12, BB-Ks
+%---------------------
+% IRDIS imaging (alone):
+% Coronagraph combination choices for IRDIS imaging modes (see UM for details)
+%   IRDIS-CI, IRDIS-DPI:  
+%              None, N-ALC-Y, N-ALC-YJ-S, N-ALC-YJ-L, N-ALC-YJH-S, 
+%                    N-ALC-YJH-L, N-ALC-Ks, N-SAM-7H
+%   IRDIS-DBI: None, N-ALC-Y, N-ALC-YJ-S, N-ALC-YJ-L, N-ALC-YJH-S, 
+%                    N-ALC-YJH-L, N-ALC-Ks, N-SAM-7H
+% Filter choices:
+%   IRDIS-CI, IRDIS-DPI: 
+%              BB-Y, BB-J, BB-H, BB-Ks, NB-Hel, NB-CntJ, NB-CntH,
+%              NB-CntK1, NB-BrG, NB-CntK2, NB-PaB, NB-FeII, NB-H2, NB-CO
+%   IRDIS-DBI: DB-Y23, DB-J23, DB-H23, DB-NDH23,  DB-H34, DB-K12 
+%---------------------
+% IRDIS spectroscopy:
+% Coronagraphic slit/grism combinations for IRDIS-LSS:
+%   IRDIS-LSS: N-S-LR-WL, N-S-MR-WL
+%---------------------
+% ZIMPOL imaging: 
+% Coronagraph choices:
+%   ZIMPOL-I: None, V-CLC-M-WF, V-CLC-M-NF, V-CLC-L-WF, V-CLC-XL-WF, V-SAM-7H
+% Filter choices:
+%   ZIMPOL-I: RI, R-PRIM, I-PRIM, V, V-S, V-L, N-R, 730-NB, N-I, I-L,
+%             KI,  TiO-717, CH4-727, Cnt748, Cnt820, HeI, OI-630,
+%             CntHa, B-Ha, N-Ha, Ha-NB
+%--------------------
+% ZIMPOL polarimetry:
+% Coronagraph choices:
+%    ZIMPOL-P1: None, V-CLC-S-WF, V-CLC-M-WF, V-CLC-L-WF, V-CLC-XL-WF, V-CLC-MT-WF
+%    ZIMPOL-P2: None, V-CLC-S-WF, V-CLC-M-WF, V-CLC-L-WF, V-CLC-XL-WF, V-CLC-MT-WF
+% Filter choices:
+%    ZIMPOL-P1: RI, R-PRIM, I-PRIM, V, N-R, N-I, KI, TiO-717, 
+%               CH4-727, Cnt748, Cnt820, CntHa, N-Ha, B-Ha     
+%    ZIMPOL-P2: RI, R-PRIM, I-PRIM, V, N-R, N-I, KI, TiO-717, 
+%               CH4-727, Cnt748, Cnt820, CntHa, N-Ha, B-Ha 
+% Readout mode choice for ZIMPOL
+%    ZIMPOL-P1: FastPol, SlowPol
+%    ZIMPOL-P2: FastPol, SlowPol
+%-------------------
+%
+% One entry per mode. Repeat the entry for each mode.
+%
+%\INSconfig{}{SPHERE}{Pupil}{mode}
+%\INSconfig{}{SPHERE}{Field}{mode}
+%
+% One entry per combination. Repeat the entry for each combination.
+%
+%\INSconfig{}{SPHERE}{IRDIFS}{Coronagraph/filter or SAM mask combination for IRDIFS}
+%\INSconfig{}{SPHERE}{IRDIFS-EXT}{Coronagraph/filter or SAM mask combination for IRDIFS-EXT}
+%
+%\INSconfig{}{SPHERE}{IRDIS-CI}{Coronagraph/filter or SAM mask combination for IRDIS-CI}
+%\INSconfig{}{SPHERE}{IRDIS-DBI}{Coronagraph/filter or SAM mask  combination for IRDIS-DBI}
+%\INSconfig{}{SPHERE}{IRDIS-DPI}{Coronagraph/filter or SAM mask combination for IRDIS-DPI}
+%\INSconfig{}{SPHERE}{IRDIS-LSS}{Coronagraphic slit/grism combination for IRDIS-LSS}
+%
+%\INSconfig{}{SPHERE}{ZIMPOL-I}{Coronagraph/filter or SAM mask combination for ZIMPOL-I}
+%
+%\INSconfig{}{SPHERE}{ZIMPOL-P1}{Coronagraph/filter/readout mode for ZIMPOL-P1}
+%\INSconfig{}{SPHERE}{ZIMPOL-P2}{Coronagraph/filter/readout mode for ZIMPOL-P2}
+%
+%------------------  
+% Uncomment one the following line if the run requires the Rapid Response Mode
+% 'Mode' should be one of IRDIFS, IRDIFS-EXT, IRDIS-CI, IRDIS-DBI,
+% IRDIS-DPI, IRDIS-LSS, ZIMPOL-I, ZIMPOL-P1, ZIMPOLP2,
+%
+%\INSconfig{}{SPHERE}{RRM}{Mode}
+% 
+%-----------------------------------------------------------------------
+%---- VISIR at the VLT-UT3 (MELIPAL) -----------------------------------
+%-----------------------------------------------------------------------
+%
+%
+% List of offered filters for IMG:
+%    M-BAND, J7.9, PAH1, J8.9, B8.7, ArIII, J9.8, SIV-1, B9.7, SIV, B10.7,
+%    SIV-2, PAH2, B11.7, PAH2-2, J12.2, NeII-1, B12.4, NeII, NeII-2, Q1, Q2, Q3
+%
+%\INSconfig{}{VISIR}{IMG 45 mas/px}{Provide list of filters HERE}
+%\INSconfig{}{VISIR}{IMG 76 mas/px}{Provide list of filters HERE}
+%
+% List of offered filters for CORONA AGPM:
+%    10-5-4QP,11-3-4QP,12-3-AGP,12-4-AGP
+%\INSconfig{}{VISIR}{CORONA 45 mas/px}{List of filters}
+%
+% List of filters offered for SAM:
+%    10-5-SAM, 11-3-SAM
+%
+%\INSconfig{}{VISIR}{SAM 45 mas/px}{List of filters}
+%
+% Spectroscopy:
+%
+%\INSconfig{}{VISIR}{SPEC N-band LR}{-}
+%\INSconfig{}{VISIR}{SPEC N-band HR Longslit}{Provide central wavelengt(s) (8.02,12.81) HERE}
+%\INSconfig{}{VISIR}{SPEC Q-band HR Longslit}{Provide central wavelength(s) (17.03) HERE}
+%\INSconfig{}{VISIR}{SPEC N-band HRCrossdispersed}{Provide central wavelength(s) (7.7-13.3)}
+%\INSconfig{}{VISIR}{SPEC Q-band HRCrossdispersed}{Provide central wavelength(s) (16.0-24.0) HERE}
+%
+%-----------------------------------------------------------------------
+%---- VIMOS at the VLT-UT3 (MELIPAL) -----------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{VIMOS}{PRE-IMG}{ESO filters: enter the list of filters}
+%\INSconfig{}{VIMOS}{IMG}{ESO filters: enter the list of filters}
+%\INSconfig{}{VIMOS}{IFU 0.67"/fibre}{LR-Red}
+%\INSconfig{}{VIMOS}{IFU 0.67"/fibre}{LR-Blue}
+%\INSconfig{}{VIMOS}{IFU 0.67"/fibre}{MR}
+%\INSconfig{}{VIMOS}{IFU 0.67"/fibre}{HR-Red}
+%\INSconfig{}{VIMOS}{IFU 0.67"/fibre}{HR-Orange}
+%\INSconfig{}{VIMOS}{IFU 0.67"/fibre}{HR-Blue}
+%
+%\INSconfig{}{VIMOS}{IFU 0.33"/fibre}{LR-Red}
+%\INSconfig{}{VIMOS}{IFU 0.33"/fibre}{LR-Blue}
+%\INSconfig{}{VIMOS}{IFU 0.33"/fibre}{MR}
+%\INSconfig{}{VIMOS}{IFU 0.33"/fibre}{HR-Red}
+%\INSconfig{}{VIMOS}{IFU 0.33"/fibre}{HR-Orange}
+%\INSconfig{}{VIMOS}{IFU 0.33"/fibre}{HR-Blue}
+%
+%\INSconfig{}{VIMOS}{MOS-grisms}{LR-Red}
+%\INSconfig{}{VIMOS}{MOS-grisms}{LR-Blue}
+%\INSconfig{}{VIMOS}{MOS-grisms}{MR}
+%\INSconfig{}{VIMOS}{MOS-grisms}{HR-Red}
+%\INSconfig{}{VIMOS}{MOS-grisms}{HR-Orange}
+%\INSconfig{}{VIMOS}{MOS-grisms}{HR-Blue}
+%
+%\INSconfig{}{VIMOS}{MOS-slits-targets}{0.6" < slit width < 1.4", targets:stellar}
+%\INSconfig{}{VIMOS}{MOS-slits-targets}{0.6" < slit width < 1.4", targets:extended}
+%\INSconfig{}{VIMOS}{MOS-slits-targets}{slit width > 1.4", targets:stellar}
+%\INSconfig{}{VIMOS}{MOS-slits-targets}{slit width > 1.4", targets:extended}
+%\INSconfig{}{VIMOS}{MOS-masks}{Enter here number of mask sets (1 set = 4 quadrants)}
+%
+%
+%%-----------------------------------------------------------------------
+%---- HAWKI at the VLT-UT4 (YEPUN) -----------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{HAWKI}{PRE-IMG}{provide list of filters (Y,J,H,Ks,CH4,BrG,H2,NB1190,NB1060,NB2090) HERE}
+%\INSconfig{}{HAWKI}{IMG}{provide list of filters (Y,J,H,Ks,CH4,BrG,H2,NB1190,NB1060,NB2090) HERE}
+%\INSconfig{}{HAWKI}{BURST}{Provide list of filters  (Y,J,H,Ks,CH4,BrG,H2,NB1190,NB1060,NB2090) HERE}
+%\INSconfig{}{HAWKI}{FASTJITT}{Provide list of filters  (Y,J,H,Ks,CH4,BrG,H2,NB1190,NB1060,NB2090) HERE}
+%\INSconfig{}{HAWKI}{RRM}{yes}
+%
+%-----------------------------------------------------------------------
+%---- SINFONI at the VLT-UT4 (YEPUN) -----------------------------------
+%-----------------------------------------------------------------------
+%
+
+%\INSconfig{}{SINFONI}{PRE-IMG}{provide list of setting(s) (J,H,K,H+K)}
+%
+%\INSconfig{}{SINFONI}{IFS 250mas/pix no-AO}{provide list of setting(s) (J,H,K,H+K) HERE}
+%\INSconfig{}{SINFONI}{IFS 100mas/pix no-AO}{provide list of setting(s) (J,H,K,H+K) HERE}
+%
+% If you plan to use a NGS, please specify the NGS name and magnitude (Rmag preferred,
+% otherwise Vmag) in target list.
+%\INSconfig{}{SINFONI}{IFS 250mas/pix NGS}{provide list of setting(s) (J,H,K,H+K) HERE}
+%\INSconfig{}{SINFONI}{IFS 100mas/pix NGS}{provide list of setting(s) (J,H,K,H+K) HERE}
+%\INSconfig{}{SINFONI}{IFS 25mas/pix NGS}{provide list of setting(s) (J,H,K,H+K) HERE}
+%
+% If you plan to use the LGS, please specify the TTS name and magnitude (Rmag preferred,
+% otherwise Vmag) in target list.
+%\INSconfig{}{SINFONI}{IFS 250mas/pix LGS}{provide list of setting(s) (J,H,K,H+K) HERE}
+%\INSconfig{}{SINFONI}{IFS 100mas/pix LGS}{provide list of setting(s) (J,H,K,H+K) HERE}
+%\INSconfig{}{SINFONI}{IFS 25mas/pix LGS}{provide list of setting(s) (J,H,K,H+K) HERE}
+%
+% If you plan to use the LGS without a TTS (seeing enhancer mode) then
+% please leave the TTS name blank in the target list.
+%\INSconfig{}{SINFONI}{IFS 250mas/pix LGS-noTTS}{provide list of setting(s) (J,H,K,H+K) HERE}
+%\INSconfig{}{SINFONI}{IFS 100mas/pix LGS-noTTS}{provide list of setting(s) (J,H,K,H+K) HERE}
+%\INSconfig{}{SINFONI}{IFS 25mas/pix LGS-noTTS}{provide list of setting(s) (J,H,K,H+K) HERE}
+%
+% Select if you have special calibrations
+%\INSconfig{}{SINFONI}{Special Cal}{-}
+%
+% Select if you need pupil tracking mode
+%\INSconfig{}{SINFONI}{Pupil Track}{-}
+%
+% Select for RRM
+%\INSconfig{}{SINFONI}{RRM}{yes}
+%
+%-----------------------------------------------------------------------
+%---- MUSE at the VLT-UT4 (YEPUN) -----------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{MUSE}{WFM-NOAO-N}{-}
+%\INSconfig{}{MUSE}{WFM-NOAO-E}{-}
+%
+% Uncomment the following line for Rapid Response Mode observations
+%\INSconfig{}{MUSE}{RRM}{yes}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----------------------------------------------------------------------
+%---- AMBER ------------------------------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{AMBER}{LR-HK}{2.2}
+%\INSconfig{}{AMBER}{LR-HK-F}{2.2}
+%
+%\INSconfig{}{AMBER}{MR-K}{2.1}
+%\INSconfig{}{AMBER}{MR-K-F}{2.1}
+%
+%\INSconfig{}{AMBER}{MR-H}{1.65}   
+%\INSconfig{}{AMBER}{MR-H-F}{1.65} 
+%
+%\INSconfig{}{AMBER}{MR-K}{2.3}
+%\INSconfig{}{AMBER}{MR-K-F}{2.3}
+%
+%\INSconfig{}{AMBER}{HR-K}{Central wavelength selected from the list:
+% 1.97929,2.01786,2.05643,2.09500,2.13357,2.17214,2.21071,2.24929,2.28786,2.32643,
+% 2.36500,2.40357,2.44214,2.48071}
+%\INSconfig{}{AMBER}{HR-K-F}{Central wavelength selected from the list:
+% 1.97929,2.01786,2.05643,2.09500,2.13357,2.17214,2.21071,2.24929,2.28786,2.32643,
+% 2.36500,2.40357,2.44214,2.48071}
+% 
+%where *-F means with FINITO
+%
+
+%-----------------------------------------------------------------------
+%---- GRAVITY ----------------------------------------------------------
+%-----------------------------------------------------------------------
+%
+%
+%\INSconfig{}{GRAVITY}{Single-Field}{provide list of grating(s) (LR,MR,HR) HERE}
+%\INSconfig{}{GRAVITY}{Dual-Field}{provide list of grating(s) (LR,MR,HR) HERE}
+%
+%
+%-----------------------------------------------------------------------
+%---- PIONIER ----------------------------------------------------------
+%-----------------------------------------------------------------------
+%
+%
+%\INSconfig{}{PIONIER}{GRISM}{1.65}
+%\INSconfig{}{PIONIER}{FREE}{1.65}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%-----------------------------------------------------------------------
+%---- VIRCAM at VISTA --------------------------------------------------
+%-----------------------------------------------------------------------
+%
+\INSconfig{A}{VIRCAM}{IMG}{ZYJ}
+\INSconfig{B}{VIRCAM}{IMG}{JHKs}
+%
+%-----------------------------------------------------------------------
+%---- OMEGACAM at VST --------------------------------------------------
+% This instrument is only available for GTO, Chilean and filler programmes.
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{OMEGACAM}{IMG}{provide list of filters here}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% La Silla
+%-----------------------------------------------------------------------
+%---- EFOSC2 (or SOFOSC) at the NTT ------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{EFOSC2}{PRE-IMG}{EFOSC2 filters: provide list here}
+%\INSconfig{}{EFOSC2}{Imaging-filters}{EFOSC2 filters:  provide list here}
+%\INSconfig{}{EFOSC2}{Imaging-filters}{ESO non EFOSC filters: provide ESOfilt No}
+%\INSconfig{}{EFOSC2}{Imaging-filters}{User's own filters (to be described in text)}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#1:320-1090}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#2:510-1100}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#3:305-610}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#4:409-752}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#5:520-935}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#6:386-807}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#7:327-524}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#8:432-636}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#11:338-752}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#13:369-932}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#14:310-509}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#16:602-1032}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#17:689-876}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#18:470-677}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#19:440-510}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Grism\#20:605:715}
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Aperture: 0.5'', ... ,10.0''}
+%
+%\INSconfig{}{EFOSC2}{Spectro-long-slit}{Aperture: Shiftable}
+%\INSconfig{}{EFOSC2}{Spectro-MOS}{PunchHead=0.95''}
+%\INSconfig{}{EFOSC2}{Spectro-MOS}{PunchHead=1.12''}
+%\INSconfig{}{EFOSC2}{Spectro-MOS}{PunchHead=1.45''}
+%\INSconfig{}{EFOSC2}{Polarimetry}{$\lambda / 2$ retarder plate}
+%\INSconfig{}{EFOSC2}{Polarimetry}{$\lambda / 4$ retarder plate}
+%\INSconfig{}{EFOSC2}{Coronograph}{yes}
+%
+%
+%-----------------------------------------------------------------------
+%---- SOFI (or SOFOSC) at the NTT --------------------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{SOFI}{PRE-IMG-LargeField}{Provide list of filters HERE}
+%\INSconfig{}{SOFI}{Imaging-LargeField}{Provide list of filters HERE}
+%\INSconfig{}{SOFI}{Burst}{Provide list of filters HERE}
+%\INSconfig{}{SOFI}{FastPhot}{Provide list of filters HERE}
+%\INSconfig{}{SOFI}{Polarimetry}{Provide list of filters HERE}
+%\INSconfig{}{SOFI}{Spectroscopy-long-slit}{Blue Grism, Provide list of slits HERE}
+%\INSconfig{}{SOFI}{Spectroscopy-long-slit}{Red Grism, Provide list of slits HERE}
+%\INSconfig{}{SOFI}{Spectroscopy-high-res}{H, Provide list of slits HERE}
+%\INSconfig{}{SOFI}{Spectroscopy-high-res}{K, Provide list of slits HERE}
+%
+%
+%-----------------------------------------------------------------------
+%---- ULTRACAM at the NTT ----------------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{ULTRACAM}{-}{-}
+%
+%-----------------------------------------------------------------------
+%---- HARPS at the 3.6 -------------------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{HARPS}{spectro-Thosimult}{HARPS}
+%\INSconfig{}{HARPS}{WAVE}{HARPS}
+%\INSconfig{}{HARPS}{spectro-ObjA(B)}{HARPS}
+%\INSconfig{}{HARPS}{spectro-ObjA(B)}{EGGS}
+%\INSconfig{}{HARPS}{spectro-polarimetry}{linear}
+%\INSconfig{}{HARPS}{spectro-polarimetry}{circular}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chajnantor
+%-----------------------------------------------------------------------
+%---- SHFI at APEX ----------------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{SHFI}{APEX-1}{Please enter Central Frequency 211 to 275 GHz}
+%\INSconfig{}{SHFI}{APEX-2}{Please enter Central Frequency 275 to 370 GHz}
+%\INSconfig{}{SHFI}{APEX-3}{Please enter Central Frequency 385 to 500 GHz} 
+%
+%-----------------------------------------------------------------------
+%---- LABOCA at APEX ----------------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{LABOCA}{IMG}{-}
+%\INSconfig{}{LABOCA}{PHOT}{-}
+%
+%-----------------------------------------------------------------------
+%---- Artemis at APEX ----------------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{ARTEMIS}{IMG}{350 um}
+%
+%-----------------------------------------------------------------------
+%---- FLASH at APEX ----------------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{FLASH}{-}{Please enter Central Frequency 272 to 377 GHz and 385 to 495 GHz}
+%
+%-----------------------------------------------------------------------
+%-----------------------------------------------------------------------
+%---- SEPIA at APEX ----------------------------------------------
+%-----------------------------------------------------------------------
+%
+%\INSconfig{}{SEPIA}{Band-5}{Please enter Central Frequency 159 to 211 GHz}
+%\INSconfig{}{SEPIA}{Band-9}{Please enter Central Frequency 602 to 720 GHz}
+%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Interferometry PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The \VLTITarget macro is only needed when requesting
+% Interferometry, in which case it is MANDATORY to uncomment it and
+% fill in the information. It takes the following parameters:
+%
+% 1st argument: run ID
+% Valid values: run IDs specified in BOX 3
+%
+% 2nd argument: target name
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 3rd argument: visual magnitude
+% Values with up to decimal places are allowed here.
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 4th argument: magnitude at wavelength of observation
+% Values with up to decimal places are allowed here.
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 5th argument: wavelength of observation (in microns)
+% Values with up to decimal places are allowed here.
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 6th argument: size at wavelength of observation (in mas)
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 7th argument: baseline
+% UT observations are scheduled in terms of 3-telescope
+% baselines for AMBER and 4-telescope baselines for PIONIER
+% and GRAVITY.
+% For UT observations please specify one of the available
+% AMBER triplets or a PIONIER/GRAVITY quadruplet.
+%
+% AT observations are scheduled in terms of 4-telescope
+% configurations (quadruplets) for any instrument. For AMBER,
+% the time can be split among the different available triplets
+% at Phase 2.
+% For AT observations with any instrument, please specify 
+% one of the 3 available AT quadruplets at this stage.
+%
+%
+% 8th parameter: Range of visibilities for the specified configuration.
+% Please specify the maximum and minimum visibility values
+% corresponding to the chosen configuration at hour angle 0
+% separated by "/".
+% This parameter is NOT checked at the pdfLaTeX compilation. 
+%
+% 9th parameter: correlated magnitude
+% (for the visibility values specified in the 8th parameter)
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+%
+% 10th parameter: time on target in hours
+% Values with up to decimal places are allowed here.
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% The available baselines for Period 100 are shown below.
+% For AT observations with AMBER, the time can be split 
+% at Phase 2 among the different offered triplets of the 
+% chosen quadruplet. 
+%
+%
+% 
+% AMBER
+% A0-B2-C1-D0
+% A0-G1-J2-J3
+% D0-G2-J3-K0
+% UT1-UT2-UT3
+% UT1-UT2-UT4
+% UT1-UT3-UT4
+% UT2-UT3-UT4
+% 
+% GRAVITY
+% A0-B2-C1-D0
+% A0-G1-J2-J3
+% D0-G2-J3-K0
+% UT1-UT2-UT3-UT4
+% 
+% PIONIER
+% A0-B2-C1-D0
+% A0-G1-J2-J3
+% D0-G2-J3-K0
+% UT1-UT2-UT3-UT4
+% 
+
+%\VLTITarget{E}{Alpha Ori}{-1.4}{-1.4}{10.6}{6}{UT1-UT2-UT3}{0.60/0.10}{-0.2/4.0}{2} 
+%\VLTITarget{F}{Alpha Ori}{-1.4}{-1.4}{10.6}{6}{D0-K0-G2-J3}{0.80/0.40}{-0.9/-0.2}{1} 
+
+% You can specify here a note applying to all or some of your VLTI
+% targets.  You should take advantage of this note to indicate
+% suitable alternative baselines for your observations.
+% This macro is NOT checked at the pdfLaTeX compilation.
+
+%\VLTITargetNotes{Note about the VLTI targets, e.g., Run E can also be carried out using UT1-UT3-UT4.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% ToO PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The \ToOrun macro is needed only when requesting Target of
+% Opportunity (ToO) observations, in which case it is MANDATORY to
+% uncomment it and fill in the information. It takes the following
+% parameters: 
+%
+% 1st argument: run ID
+% Valid values: run IDs specified in BOX 3
+%
+% 2nd argument: nature of observation
+% Valid values: RRM, ToO-hard, ToO-soft
+%
+% 3rd argument: number of targets per run
+% This parameter is NOT checked at the pdfLaTeX compilation.
+%
+% 4th argument: number of triggers per targets
+% (for RRM and ToO observations only)
+% This parameter is NOT checked at the pdfLaTeX compilation.
+
+%\TOORun{A}{RRM}{2}{3}
+%\TOORun{B}{ToO-hard}{3}{1}
+
+% You have the opportunity to add notes to the ToO runs by using
+% the \TOONotes macro.
+% This macro is NOT checked at the pdfLaTeX compilation.
+
+%\TOONotes{Use this macro to add a note to the ToO page.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% VISITOR SPECIAL INSTRUMENT PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The following commands are only needed when bringing a Visitor
+% Special Instrument, in which case it is MANDATORY to uncomment them
+% and provide all the required information.
+%
+%\Desc{}   %Description of the instrument and its operation
+%\Comm{}   %On which telescope(s) has instrument been commissioned/used
+%\WV{}     %Total weight and value of equipment to be shipped
+%\Wfocus{} %Weight at the focus (including ancillary equipment)
+%\Interf{} %Compatibility of attachment interface with required focus
+%\Focal{}  %Back focal distance value
+%\Acqu{}   %Acquisition, focusing, and guiding procedure
+%\Softw{}  %Compatibility with ESO software standards (data handling)
+%\Suppl{}  %Estimate of services expected from ESO (in person days)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% THE END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MakeProposal
+\end{document}
+
+
