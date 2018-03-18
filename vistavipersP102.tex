@@ -136,8 +136,8 @@
 \Abstract{
 
 We propose to obtain near-IR fluxes of some 100,000 galaxies in deep spectroscopic survey fields with VISTA. 
-The rationale is two-fold: {\bf (i)} We aim to establish {\em the} reference data set for cross-correlation techniques to calibrate photometric redshifts (photo-$z$) that form the backbone of current and future weak lensing surveys. These measurements are particularly timely in view of the recent KiDS results (Hildebrandt et al. 2017) which find a significantly lower clustering amplitude of large-scale structure than Planck: the dominant systematic error on this result is the photo-$z$ calibration. %, and as statistical errors come down this will become a fundamental limitation. 
-Targeting VIPERS and VVDS with VISTA increases the existing overlap area between deep spectroscopy and near-IR photometry by a factor of ten, and allows us to remove this bottleneck for KiDS. 
+The rationale is two-fold: {\bf (i)} We aim to establish {\em the} reference data set for cross-correlation techniques to calibrate photometric redshifts (photo-$z$) that form the backbone of current and future weak lensing surveys. These measurements are particularly timely in view of the current KiDS and DES results which consistently find a lower clustering amplitude of large-scale structure than Planck: the dominant systematic error on this result is the photo-$z$ calibration. %, and as statistical errors come down this will become a fundamental limitation. 
+By targeting VIPERS and VVDS with VISTA we will increase the existing overlap area between deep spectroscopy and near-IR photometry by a factor of ten, and remove this bottleneck for cosmic shear surveys.
 {\bf (ii)} We also aim to obtain accurate SEDs for these galaxies enabling studies of stellar masses, stellar population ages and dust content down to a stellar mass of $M_*\sim10^{10}M_\odot$ at $z\sim1$.
 }
 
@@ -198,8 +198,8 @@ Targeting VIPERS and VVDS with VISTA increases the existing overlap area between
 % If a TOO run is specified please make sure that you fill in the TOO page.
 
 
-\ObservingRun{A}{102}{VIRCAM}{15h}{oct}{g}{1.2}{THN}{s}{}
-\ObservingRun{B}{102}{VIRCAM}{15h}{oct}{n}{1.2}{THN}{s}{}
+\ObservingRun{A}{102}{VIRCAM}{13.8h}{oct}{g}{1.2}{THN}{s}{}
+\ObservingRun{B}{102}{VIRCAM}{6.3h}{oct}{n}{1.2}{THN}{s}{}
 
 
 % Proprietary time requested.
@@ -214,7 +214,7 @@ Targeting VIPERS and VVDS with VISTA increases the existing overlap area between
 % This macro is optional and can be commented out.
 % It is also NOT checked at the pdfLaTeX compilation.
 
-\AwardedNights{VST}{30h awarded in P100. 30\% were executed.}
+\AwardedNights{VISTA}{30h awarded in P100; 10h were executed.}
 
 % Indicate below the telescope(s) and number of nights/hours still
 % necessary, in the future, to complete this programme, if any.
@@ -232,7 +232,7 @@ Targeting VIPERS and VVDS with VISTA increases the existing overlap area between
 % This macro is optional and can be commented out.
 % It is also NOT checked at the pdfLaTeX compilation.
 
-\SpecialRemarks{Associated observations of the same fields with VST are already in the KiDS public survey queue.}
+\SpecialRemarks{Associated observations of the same fields with VST have mostly already been obtained; the remainder are in the KiDS public survey queue.}
   
 %---- BOX 6 ------------------------------------------------------------
 % Please provide the ESO User Portal username for the Principal
@@ -306,9 +306,12 @@ Targeting VIPERS and VVDS with VISTA increases the existing overlap area between
 
 \ScientificRationale{Our cosmological model, $\Lambda$CDM, is sufficiently strange that, despite its great success describing the Universe, it warrants stringent testing. Gravitational lensing by large scale structure, a.k.a. cosmic shear, is one of the most direct probes that we can use. Cosmic shear surveys have now progressed to the point that the accuracy with which they measure the relevant cosmological parameters can compete with the best other probes, including CMB experiments. In particular lensing can precisely measure the amount of clustered matter, summarized in the parameter $S_8\equiv \sigma_8 \sqrt{\Omega_m/0.3}$. Intriguingly, most cosmic shear measurements (but not all) measure $S_8$ values that are significantly lower than what is predicted by the best-fit $\Lambda$CDM model from the Planck CMB mission (Kilbinger et al. 2015).
 
-Combining galaxy shape measurements with photometric redshifts (photo-$z$) adds the vital 3D information that sets the physical scale for the observed weak lensing distortions (the amplitude of the weak lensing distortion depends on the angular diameter distances to lens and source). Knowing the redshift {\em distribution} of the galaxies is essential, even if individual photo-$z$ are noisy. Because percent-level errors in the mean redshift have significant effects on the cosmological parameter inference, calibrating these $N(z)$'s against spectroscopic redshifts is unavoidable. 
+Combining galaxy shape measurements with photometric redshifts (photo-$z$) adds the vital 3D information that sets the physical scale for the observed weak lensing distortions (the amplitude of the weak lensing distortion depends on the angular diameter distances to lens and source). Knowing the redshift {\em distribution} of the lensed galaxies is essential, even if individual photo-$z$ are noisy. 
+To achieve the necessary percent-level accuracy on the mean redshifts, 
+%Because percent-level errors in the mean redshift have significant effects on the cosmological parameter inference,
+calibrating these $N(z)$'s against spectroscopic redshifts is unavoidable. 
 
-The most recent cosmic shear measurement, shown in green in Fig.~1, is from an analysis of the first one-third of the data from our ESO-led Kilo-Degree Survey (KiDS) on the VST (Kuijken et al 2015; Hildebrandt et al. 2017 $\equiv$ H17), and its constraints on $S_8$ are in tension at the $\sim2.5\sigma$ level with Planck (2015). KiDS observations continue, and analysis of a data set double the size of H17 (some 900 square degrees) is starting up. Another very significant improvement over H17 that is already well underway is the addition of near-infrared data from the overlapping VIKING survey, which covers the same sky as KiDS, and was completed on VISTA last year.
+The most recent cosmic shear measurement, shown in green in Fig.~1, is from an analysis of the first one-third of the data from our ESO-led Kilo-Degree Survey (KiDS) on the VST (Kuijken et al 2015; Hildebrandt et al. 2017 $\equiv$ H17), and its constraints on $S_8$ are in tension at the $\sim2.5\sigma$ level with Planck (2015). The competing Dark Energy Survey have since reported similar, if slightly less discrepant, results (Troxel et al 2017). KiDS observations continue, with analysis of a data set double the size of H17 (some 900 square degrees) underway in preparation for the 4th KiDS data release, due before the end of 2018. DR4 will include near-infrared photometry  from the overlapping, completed, VIKING survey on VISTA.
 
 In H17 we have classified KiDS galaxies into four tomographic bins, based on the best-fit template-fitting photo-$z$ using the well-known BPZ code. There are two possible strategies for obtaining the $N(z)$ for each of these bins: directly reweighting spectroscopic redshift catalogues so that they reproduce the distribution of galaxy magnitudes and colours using a $k$-nearest-neighbour technique (DIR); or cross-correlating KiDS galaxy positions with thin redshift slices of an overlapping spectroscopic redshift catalogue and thus deducing the fraction of KiDS galaxies at each redshift (CC). The methods are complementary. DIR requires a very deep spectroscopic redshift catalogue that spans the full magnitude range of the KiDS galaxies; on the other hand CC requires a very large galaxy population that overlaps in redshift, but does not have to be as deep as the reference sample. In the KiDS-450 analysis our CC calibration relied on just 1.5 square degrees of suitable spectroscopic data, and the errors (grey contours in Fig.~1) were consequently large. Only optical data were used.
 }
@@ -323,7 +326,7 @@ reduce the sensitivity of the DIR method to sample variance by adding two widely
 improve the overall quality of the photo-$z$ estimates (used to define the tomographic bins) by including VIKING data (see Fig.~2), which will enable us to define a fifth tomographic bin beyond redshift 0.9. Adding this fifth high-$z$ bin will increase the volume and hence the statistical power of KiDS by an estimated 20\%.
 
 Rather than embarking on a massive spectroscopic survey of KiDS galaxies, it is much more efficient to obtain KiDS- and VIKING-like photometry for areas of the sky where such redshifts have already been obtained. 
-Bringing the CC accuracy to the level of DIR (see Fig.1) requires a tenfold increase in the area covered with deep spectra, from 1.5 to 15 sq.deg. At lower $z$ we can use the GAMA, BOSS, and 2dFLenS (Blake et al 2016) surveys, which overlap with KiDS/VIKING observations, but beyond the GAMA/BOSS/2dFLenS redshift limit of $z\sim$0.7 new data are required. The VIPERS survey (Scodeggio et al 2016) is ideal for this purpose: it covers a large area, its depth of I=22.5 is well-matched to KiDS, and its photometric preselection ensures that it contains mostly galaxies between redshifts 0.5 and 1.2 (Fig.~3). The VVDS (LeFevre et al 2013) shares a lot of these properties and adds more lines-of-sight to reduce the crucial sample variance in this calibration sample.
+Bringing the CC accuracy to the level of DIR (see Fig.1) requires a tenfold increase in the area covered with deep spectra, from 1.5 to 15 sq.deg. At $z\la0.7$ we can use the GAMA, BOSS, and 2dFLenS (Blake et al 2016) surveys, which overlap with KiDS/VIKING observations, but beyond this redshift limit new data are required. The VIPERS survey (Scodeggio et al 2018) is ideal for this purpose: it covers a large area, its depth of I=22.5 is well-matched to KiDS, and its photometric preselection ensures that it contains mostly galaxies between redshifts 0.5 and 1.2 (Fig.~3). The VVDS (LeFevre et al 2013) shares a lot of these properties and adds more lines-of-sight to reduce the crucial sample variance in this calibration sample.
 
 For all fields mentioned above (from VIPERS and VVDS) KiDS observations are already scheduled on the VST and being taken; here we request the corresponding VIKING-like VISTA data.
 
@@ -336,7 +339,7 @@ Apart from the cosmology science case outlined above, we point out the significa
   et al 2017, MN 465, 1454 (H17); Kilbinger 2015, RPPh 78, 6901;
   Kuijken et al 2015, MN 454, 3500; LeFevre et al 2013, A\&A 559, 14;
   Moutard et al 2016a/b,  A\&A 590, 102/3; Planck Collaboration 2015,
-  A\&A 594, 13; Scodeggio et al 2016, arXiv:1611.07048} 
+  A\&A 594, 13; Scodeggio et al 2018, A\&A 609, A84; Troxel et al 2017, arXiv:1708.01538} 
 } 
 
 %
@@ -352,7 +355,7 @@ Apart from the cosmology science case outlined above, we point out the significa
 
 \MakePicture{testfig1.pdf}{width=16.7cm,trim=2cm 11cm 1.8cm 11.5cm,clip}
 \MakePicture{KiDS_zz.jpg}{height=5.9cm}
-\MakeCaption{Fig.~2: Photo-$z$ ($Z_{\rm B}$) vs. spectroscopic redshifts using optical-only as in H17 (\emph{left}) and using optical and near-infrared data (\emph{right}) including recently obtained ESO DDT data and an updated BPZ setup. The numbers correspond to the normalised median-absolute-deviation (NMAD) of the quantity $(z_{\rm spec}-Z_{\rm B})/(1+z_{\rm spec}) \equiv \Delta z/(1+z)$ and the rate of objects with $|\Delta z/(1+z)|>0.15$ for all objects as well as for objects with photo-$z$ $Z_{\rm B}>0.9$ (i.e. the new 5th tomographic bin). The near-infrared data improve on all of these statistics, in particular for high-redshifts that weren't used in H17 but will be usable with the data from this proposal.}
+\MakeCaption{Fig.~2: Photo-$z$ ($Z_{\rm B}$) vs. spectroscopic redshifts using optical-only as in H17 (\emph{left}) and using optical and near-infrared data (\emph{right}) including ESO DDT data and an updated BPZ setup. The numbers correspond to the normalised median-absolute-deviation (NMAD) of the quantity $(z_{\rm spec}-Z_{\rm B})/(1+z_{\rm spec}) \equiv \Delta z/(1+z)$ and the rate of objects with $|\Delta z/(1+z)|>0.15$ for all objects as well as for objects with photo-$z$ $Z_{\rm B}>0.9$ (i.e. the new 5th tomographic bin). The near-infrared data improve on all of these statistics, in particular for high-redshifts that weren't used in H17 but will be usable with the data from this proposal.}
 %fig 2 with caption to the side
 \MakePicture{testfig2.pdf}{width=16.7cm,trim=2cm 11cm 1.8cm 12.cm,clip}
 
@@ -425,11 +428,11 @@ In order to attain these exposure times over a uniform area requires a six-step 
 %  data obtained and the scientific output generated.
 
 \LastObservationRemark{
-This proposal is part of the KiDS public survey team's effort to measure the growth of large-scale structure from weak lensing, and to use this information to study the cosmological model. KiDS+VIKING has been ongoing on the VST and VISTA for the past five years, and has resulted in over 20 papers already (see http://kids.strw.leidenuniv.nl/papers.php): most pertinent to this proposal are the papers by Hildebrandt et al. (2017) and Joudaki et al. (2017), which show our cosmology constraints based on the first 450 square degrees of KiDS-only lensing data. Analysis of  900 square degrees of KiDS+VIKING is now underway, and will require the added fidelity of the photometric redshift calibration that the present proposal enables.
+This proposal is part of the KiDS public survey team's effort to measure the growth of large-scale structure from weak lensing, and to use this information to study the cosmological model. KiDS+VIKING has been ongoing on the VST and VISTA for the past five years, and has resulted in over 35 papers already (see http://kids.strw.leidenuniv.nl/papers.php): most pertinent to this proposal are the papers by Hildebrandt et al. (2017) and Joudaki et al. (2017), which show our cosmology constraints based on the first 450 square degrees of KiDS-only lensing data. Analysis of  900 square degrees of KiDS+VIKING is now underway, and will require the added fidelity of the photometric redshift calibration that the present proposal enables.
 
 All KiDS and VIKING data are released via the ESO archive and publicly available.
 
-A DDT proposal, similar to this one but observing only two tiles (overlapping with the DEEP2 redshift survey), was submitted in November 2016 and observations were finished in December. The data have been analysed and included in the KiDS+VIKING photo-z calibration. The results in the right-hand panel of Fig.~2 are directly based on these data.
+A DDT proposal, similar to this one but observing only two tiles (overlapping with the DEEP2 redshift survey), was submitted in November 2016. The data have been analysed and included in the KiDS+VIKING photo-z calibration. The results in the right-hand panel of Fig.~2 are directly based on these data.
 }
 
 %
@@ -440,7 +443,7 @@ A DDT proposal, similar to this one but observing only two tiles (overlapping wi
 % This macro is NOT checked at the pdfLaTeX compilation.
 
 \RequestedDataRemark{
-There are some $JHK\!s$ pointings from the VISTA public survey VHS that cover our fields, but they are too shallow. In addition some parts of W1 are covered by VIDEO in $ZYJHK\!s$, which we would not have to repeat. Unfortunately the placement of these tiles is not optimal for mapping this VIPERS patch.
+This is a resubmission of an accepted P100 proposal, which was only 30\% executed. We have removed the completed OBs from our proposal and reduced the requested time accordingly. We have taken account of the existing VIDEO data that covers part of W1 where we can.
 
 \medskip
 We have also checked the CFHT WIRCAM archive. WIRCAM has a 4x smaller footprint than VIRCAM, but it has also been used to cover parts of VIPERS. $K\!s$ band coverage exists for VIPERS DR1, as well as somewhat too shallow Y band observations and sporadic shallow J and H images. We considered skipping $K\!s$ band in this proposal, but prefer to ensure instrumental homogeneity as well as the more robust photometric calibration that is possible with the larger VISTA footprint. Our VVDS fields have no WIRCAM coverage.
@@ -455,7 +458,10 @@ We have also checked the CFHT WIRCAM archive. WIRCAM has a 4x smaller footprint 
 % It is also NOT checked at the pdfLaTeX compilation.
 
 \RequestedDuplicateRemark{Our fields intentionally overlap with VST optical imaging
-  of the same regions, in order to build full 9-band photometric data
+  of the same regions (undertaken as part of the Kilo-Degree Survey), in order to build full 9-band photometric data. 
+  
+  Note that VHS public survey data from VISTA cover some of our target areas too, but the observations are much too shallow for our needs (nor do they include ZY).
+
 }
 
 %
@@ -475,12 +481,19 @@ We have also checked the CFHT WIRCAM archive. WIRCAM has a 4x smaller footprint 
 % This macro is NOT checked at the pdfLaTeX compilation.
 
 \Publications{
-Hildebrandt H. et al., 2017, MNRAS, 465, 1454: {\bf KiDS-450: Cosmological parameter constraints from tomographic weak gravitational lensing}    \smallskip\\
-Joudaki A. et al, MNRAS, submitted (arXiv:1610.04606): {\bf KiDS-450: Testing extensions to the standard cosmological model}  \smallskip\\
-Kuijken K. et al, MNRAS, 2015, 454, 3500: {\bf Gravitational lensing analysis of the Kilo Degree Survey} \smallskip\\
-de Jong J.T.A. et al., A\&A, submitted (arXiv:1703.02991): {\bf The third data release of the Kilo-Degree Survey and associated data products}\smallskip\\
-Morrison C. et al., MNRAS, 2017, 467, 3576: {\bf the-wizz: clustering redshift estimation for everyone}\smallskip\\
-
+de Jong et al.  2017, A\&A, 604, A134: {\bf The third data release of the Kilo-Degree Survey}\\
+Hildebrandt et al. 2017, MNRAS, 465, 1454: {\bf KiDS-450: Cosmological parameter constraints from tomographic weak gravitational lensing}    \\
+Brouwer et al. 2017, MNRAS, 466, 2547: {\bf First test of Verlinde's theory of emergent gravity using weak gravitational lensing measurements} \\
+Tr\"oster et al. 2017, MNRAS, 467, 2706: {\bf Cross-correlation of weak lensing and gamma rays: implications for the nature of dark matter} \\
+Morrison et al. 2017, MNRAS, 467, 3576: {\bf the-wizz: clustering redshift estimation for everyone} \\
+Van Uitert et al. 2017, MNRAS, 467, 4131: {\bf Halo ellipticity of GAMA galaxy groups from KiDS weak lensing} \\
+Dvornik et al. 2017, MNRAS, 468, 3215: {\bf A KiDS weak lensing analysis of assembly bias in GAMA galaxy groups} \\
+Joudaki et al. 2017, MNRAS, 471, 1259: {\bf KiDS-450: Testing extensions to the standard cosmological model}   \\
+Harnois-D\'eraps et al. 2017, MNRAS, 471, 1619: {\bf KiDS-450: tomographic cross-correlation of galaxy shear with Planck lensing} \\
+Koehlinger et al. 2017, MNRAS, 471, 4412: {\bf KiDS-450: the tomographic weak lensing power spectrum and constraints on cosmological parameters} \\
+Velliscig et al. 2017, MNRAS, 471, 2856: {\bf Galaxy-galaxy lensing in EAGLE: comparison with data from 180 deg$^2$  of the KiDS and GAMA surveys} \\
+Joudaki et al. 2018, MNRAS, 474, 4894: {\bf KiDS-450 + 2dFLenS: Cosmological parameter constraints from weak gravitational lensing tomography and overlapping redshift-space galaxy clustering} \\
+Van Uitert et al. 2018, MNRAS, in press (arXiv:1706.05004): {\bf KiDS+GAMA: Cosmology constraints from a joint analysis of cosmic shear, galaxy-galaxy lensing and angular clustering}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -539,36 +552,36 @@ Morrison C. et al., MNRAS, 2017, 467, 3576: {\bf the-wizz: clustering redshift e
 %
 % DO NOT USE ANY TEX/LATEX MACROS FOR THE TARGETS
 
-\Target{A}{VIPERS-W1}{02 07 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 1, ZYJ}{}
-\Target{A}{VIPERS-W1}{02 13 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 2, ZYJ}{}
-\Target{A}{VIPERS-W1}{02 19 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 3, ZYJ}{}
-\Target{A}{VIPERS-W1}{02 25 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 4, ZYJ}{}
-\Target{A}{VIPERS-W1}{02 31 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 5, ZYJ}{}
 
-\Target{A}{VIPERS-W4}{22 03 08}{01 52 00}{1.25}{}{1.5d}{Pointing 1, ZYJ}{}
-\Target{A}{VIPERS-W4}{22 09 08}{01 52 00}{1.25}{}{1.5d}{Pointing 2, ZYJ}{}
-\Target{A}{VIPERS-W4}{22 15 08}{01 52 00}{1.25}{}{1.5d}{Pointing 3, ZYJ}{}
-
-\Target{A}{VVDSF10}{10 04 20}{02 00 00}{1.25}{}{1.5d}{single pointing,
-ZYJ}{}
-\Target{A}{VVDSF14}{13 59 35}{05 07 00}{1.25}{}{1.5d}{single pointing,
-ZYJ}{}
-\Target{A}{VVDSF22}{22 18 00}{-00 06 00}{1.25}{}{1.5d}{Pointing 1, ZYJ}{}
-\Target{A}{VVDSF22}{22 18 00}{00 54 00}{1.25}{}{1.5d}{Pointing 2, ZYJ}{}
-\Target{B}{VIPERS-W1}{02 07 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 1, JHKs}{}
-\Target{B}{VIPERS-W1}{02 13 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 2, JHKs}{}
-\Target{B}{VIPERS-W1}{02 19 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 3, JHKs}{}
-\Target{B}{VIPERS-W1}{02 25 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 4, JHKs}{}
-\Target{B}{VIPERS-W1}{02 31 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 5, JHKs}{}
-
-\Target{B}{VIPERS-W4}{22 03 08}{01 52 00}{1.25}{}{1.5d}{Pointing 1, JHKs}{}
-\Target{B}{VIPERS-W4}{22 09 08}{01 52 00}{1.25}{}{1.5d}{Pointing 2, JHKs}{}
-\Target{B}{VIPERS-W4}{22 15 08}{01 52 00}{1.25}{}{1.5d}{Pointing 3, JHKs}{}
-
+\Target{A}{VVDSF10}{10 04 20}{02 00 00}{1.25}{}{1.5d}{single pointing, ZYJ}{}
 \Target{B}{VVDSF10}{10 04 20}{02 00 00}{1.25}{}{1.5d}{single pointing, JHKs}{}
+\Target{A}{VVDSF14}{13 59 35}{05 07 00}{1.25}{}{1.5d}{single pointing, ZYJ}{}
 \Target{B}{VVDSF14}{13 59 35}{05 07 00}{1.25}{}{1.5d}{single pointing, JHKs}{}
-\Target{B}{VVDSF22}{22 18 00}{-00 06 00}{1.25}{}{1.5d}{Pointing 1, JHKs}{}
-\Target{B}{VVDSF22}{22 18 00}{00 54 00}{1.25}{}{1.5d}{Pointing 2, JHKs}{}
+\Target{A}{VVDSF22}{22 18 00}{-00 06 00}{1.25}{}{1.5d}{Ptg. 1, ZYJ (JHKs done)}{}
+\Target{A}{VVDSF22}{22 18 00}{00 54 00}{1.25}{}{1.5d}{Ptg. 2, ZYJ (JHKs done)}{}
+
+
+\Target{A}{VIPERS-W1}{02 07 36}{-04 37 30}{1.25}{}{1.5d}{Ptg. 2, ZYJ}{}
+\Target{B}{VIPERS-W1}{02 07 36}{-04 37 30}{1.25}{}{1.5d}{Ptg. 2, JHKs}{}
+\Target{A}{VIPERS-W1}{02 13 36}{-04 37 30}{1.25}{}{1.5d}{Ptg. 3, ZYJ}{}
+\Target{B}{VIPERS-W1}{02 13 36}{-04 37 30}{1.25}{}{1.5d}{Ptg. 3, JHKs}{}
+\Target{A}{VIPERS-W1}{02 25 36}{-05 37 30}{1.25}{}{1.5d}{Ptg. 4, ZYJ}{}
+\Target{B}{VIPERS-W1}{02 25 36}{-04 37 30}{1.25}{}{1.5d}{Ptg. 4, JHKs}{}
+\Target{A}{VIPERS-W1}{02 31 36}{-04 37 30}{1.25}{}{1.5d}{Ptg. 5, ZYJ (JHKs done)}{}
+
+\Target{A}{VIPERS-W4}{22 03 08}{01 52 00}{1.25}{}{1.5d}{Ptg. 1, ZYJ (JHKs done)}{}
+\Target{A}{VIPERS-W4}{22 09 00}{01 52 00}{1.25}{}{1.5d}{Ptg. 2, ZYJ (JHKs done)}{}
+\Target{A}{VIPERS-W4}{22 14 50}{01 52 00}{1.25}{}{1.5d}{Ptg. 3, ZYJ (JHKs done)}{}
+
+
+%\Target{B}{VIPERS-W1}{02 31 36}{-04 37 30}{1.25}{}{1.5d}{Pointing 5, JHKs}{}
+
+%\Target{B}{VIPERS-W4}{22 03 08}{01 52 00}{1.25}{}{1.5d}{Pointing 1, JHKs}{}
+%\Target{B}{VIPERS-W4}{22 09 00}{01 52 00}{1.25}{}{1.5d}{Pointing 2, JHKs}{}
+%\Target{B}{VIPERS-W4}{22 14 50}{01 52 00}{1.25}{}{1.5d}{Pointing 3, JHKs}{}
+%\Target{B}{VIPERS-W4}{22 19 08}{01 05 00}{1.25}{}{1.5d}{Pointing 4, JHKs}{}
+%\Target{B}{VIPERS-W4}{22 19 08}{00 00 00}{1.25}{}{1.5d}{Pointing 5, JHKs}{}
+
 
 
 %                      ***************** 
@@ -584,9 +597,12 @@ ZYJ}{}
 % of your targets.
 % This macro is NOT checked at the pdfLaTeX compilation.
 
-\TargetNotes{We follow the observing strategy of the VIKING main survey: we split the observations into two OBs, with observations in 3 filters each. The reddest bands can be done in bright time. J band observations are split between the two OBs for added robustness of the photometric calibration.\\
-The VIPERS observations do not cover the entire VIPERS area, but target two stripes which contain ten times as many galaxies with spectroscopic redshifts down to $i=22.5$ as are available in VISTA fields thus far.\\
-The VVDS fields provide about twice as many targets per unit area as VIPERS, with no photo-z preselection, and so are better suited to firming up the DIR calibration but will also be used in the CC calibration.
+\TargetNotes{
+\ \\
+1. We follow the observing strategy of the VIKING main survey: we split the observations into two OBs, with observations in 3 filters each. The reddest bands can be done in bright time. J band observations are split between the two OBs for added robustness of the photometric calibration.\\
+2. The VIPERS observations do not cover the entire VIPERS area, but target two stripes which contain ten times as many galaxies with spectroscopic redshifts down to $i=22.5$ as are available in VISTA fields thus far.\\
+3. The VVDS fields provide about twice as many targets per unit area as VIPERS, with no photo-z preselection, and so are better suited to firming up the DIR calibration but will also be used in the CC calibration.\\
+4. In P100, complete observations were taken for the first pointing of VIPERS-W1, and also the OBs covering VIPERS-W4 and VVDSF22 in JHKs were carried out.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
