@@ -327,7 +327,7 @@ reduce the sensitivity of the DIR method to sample variance by adding two widely
 improve the overall quality of the photo-$z$ estimates (used to define the tomographic bins) by including VIKING data (see Fig.~2), which will enable us to define a fifth tomographic bin beyond redshift 0.9. Adding this fifth high-$z$ bin will increase the volume and hence the statistical power of KiDS by an estimated 20\%. 
 
 Rather than embarking on a massive spectroscopic survey of KiDS galaxies, it is much more efficient to obtain KiDS- and VIKING-like photometry for areas of the sky where such redshifts have already been obtained. 
-Bringing the CC accuracy to the level of DIR (see Fig.1) requires a tenfold increase in the area covered with deep spectra, from 1.5 to 15 sq.deg. At $z\la0.7$ we can use the GAMA, BOSS, and 2dFLenS (Blake et al 2016) surveys, which overlap with KiDS/VIKING observations, but beyond this redshift limit new data are required. The VIPERS survey (Scodeggio et al 2018) is ideal for this purpose: it covers a large area, its depth of I=22.5 is well-matched to KiDS, and its photometric preselection ensures that it contains mostly galaxies between redshifts 0.5 and 1.2 (Fig.~3). The VVDS (LeFevre et al 2013) shares a lot of these properties and adds more lines-of-sight to reduce the crucial sample variance in this calibration sample.
+Bringing the CC accuracy to the level of DIR (see Fig.1) requires a tenfold increase in the area covered with deep spectra, from 1.5 to 15 sq.deg. At $z\la0.7$ we can use the GAMA, BOSS, and 2dFLenS (Blake et al 2016) surveys, which overlap with KiDS/VIKING observations, but beyond this redshift limit new data are required. The VIPERS survey (Scodeggio et al 2018) is ideal for this purpose: it covers a large area, its depth of I=22.5 is well-matched to KiDS, and its photometric preselection ensures that it contains mostly galaxies between redshifts 0.5 and 1.2 (Fig.~3). The VVDS (LeFevre et al 2013) shares a lot of these properties and adds more lines of sight to reduce the crucial sample variance in this calibration sample.
 
 For all fields mentioned above (from VIPERS and VVDS) KiDS observations are already scheduled on the VST and being taken; here we request the corresponding VIKING-like VISTA data.
 
@@ -447,10 +447,12 @@ This proposal was accepted for P100 but only 45\% executed. Unfortunately the da
 % This macro is NOT checked at the pdfLaTeX compilation.
 
 \RequestedDataRemark{
-Compared to our P100 submission, we have removed the completed OBs and reduced the requested time accordingly. We have taken account of the existing VIDEO data that covers part of W1 where we can.
+We have taken account of the existing VIDEO data that covers part of W1 and avoid overlap.
+We have also checked the CFHT WIRCAM archive. WIRCAM has a 4x smaller footprint than VIRCAM, but it has also been used to cover parts of VIPERS. $K\!s$ band coverage exists for VIPERS DR1, as well as somewhat too shallow Y band observations and sporadic shallow J and H images. We considered skipping $K\!s$ band in this proposal, but prefer to ensure instrumental homogeneity as well as the more robust photometric calibration that is possible with the larger VISTA footprint. Our VVDS fields have no WIRCAM coverage.
 
 \medskip
-We have also checked the CFHT WIRCAM archive. WIRCAM has a 4x smaller footprint than VIRCAM, but it has also been used to cover parts of VIPERS. $K\!s$ band coverage exists for VIPERS DR1, as well as somewhat too shallow Y band observations and sporadic shallow J and H images. We considered skipping $K\!s$ band in this proposal, but prefer to ensure instrumental homogeneity as well as the more robust photometric calibration that is possible with the larger VISTA footprint. Our VVDS fields have no WIRCAM coverage.
+We only request OBs that were queued but not been executed in our accepted P100 project. 
+
 }
 
 %
@@ -464,7 +466,8 @@ We have also checked the CFHT WIRCAM archive. WIRCAM has a 4x smaller footprint 
 \RequestedDuplicateRemark{Our fields intentionally overlap with VST optical imaging
   of the same regions (undertaken as part of the Kilo-Degree Survey), in order to build full 9-band photometric data. 
   
-  Note that VHS public survey data from VISTA cover some of our target areas too, but the observations are much too shallow for our needs (nor do they include ZY).
+  \medskip
+VHS public survey data from VISTA cover some of our target areas too, but the observations are much too shallow for our needs (nor do they include Z or Y bands).
 
 }
 
