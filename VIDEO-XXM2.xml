@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SURVEY backtrackStep="100.0" id="VIDEO-XXM2" ip="VIRCAM-102.02" maxJitter="15.0" tileAngle="90" tileOverlapX="60.0" tileOverlapY="60.0">
+<SURVEY_AREA coordSys="FK5 (J2000)" exclude="false" lat1="-05:31:00" lat2="-04:10:00" long1="02:20:00" long2="02:24:00" number="1" posangle="0.0000" type="Coordinate Range">
+<TILE dec="-044644.400" id="1_1" offangle="-90.0000" priority="0" ra="022204.440">
+<PATTERN>Tile6n</PATTERN>
+<PAWPRINT dec="-044114.640" id="1_1:1" offangle="-90.0000" offsetx="-0.475" offsety="0.475" ra="022142.384">
+<REFSTARS><![CDATA[PAF.HDR.START   ;  # Start of PAF Header
+PAF.TYPE          "paramfile";  # Type of PAF
+PAF.ID            "VIDEO-XXM2-1-1_1-1-20180725170731";  # Unique ID for PAF
+PAF.NAME          "VIDEO-XXM2-1-1_1-1.paf";  # Name of PAF
+PAF.DESC          "Telescope guide star candidates for Pawprint 1";  # Short description of PAF
+PAF.CRTE.NAME     "SADT v5.1.0 (VIRCAM-102.02)";  # Name of creator
+PAF.CRTE.DAYTIM   "2018-07-25 17:07";  # Civil Time for creation
+PAF.LCHG.NAME     "SADT v5.1.0";  # Name of person/application changing
+PAF.LCHG.DAYTIM   "2018-07-25 17:07";  # Timestamp of last change
+PAF.CHCK.NAME     "";  # Name of application checking
+OCS.SADT.ID             "VIDEO-XXM2";  # Survey ID (string)
+OCS.SADT.PATTERN        "Tile6n";  # Tile pattern ID
+OCS.SADT.MAXJIT        "15.0";  # maximum Jitter Size (arcsec)
+OCS.SADT.OVERLAPX       "60.0";  # tileOverlapX (arcsec)
+OCS.SADT.OVERLAPY       "60.0";  # tileOverlapY (arcsec)
+OCS.SADT.AREA.ID        "1";  # Survey Area ID (integer)
+OCS.SADT.TILE.ID        "1_1";  # Tile ID (x_y coordinate from bottom right) within Survey Area
+OCS.SADT.TILE.RA        "022204.440";  # Tile RA  ( hhmmss.ss)
+OCS.SADT.TILE.DEC       "-044644.400";  # Tile Dec (sddmmss.ss)
+OCS.SADT.TILE.OFFANGLE  "-90.0000";  # Tile Rotator Offangle
+PAF.HDR.END       ;  # End of PAF Header
+
+TPL.FILE.DIRNAME  "$INS_ROOT/$INS_USER/MISC/VISTA";
+
+OCS.SADT.CAT.ID   "2MASS at CDS (Imag synthesised from 2MASS JHKs)";  # Guide/AO star candidate catalogue
+OCS.SADT.IP.ID    "SADT v5.1.0, VIRCAM-102.02";  # Creator version
+
+TEL.AG.START      "T";  # Start autoguiding
+TEL.AG.GUIDESTAR  "SETUPFILE";  # Select guide stars from this setup file (the default)
+
+TEL.GS1.ALPHA             "021858.181";  # RA of candidate 1
+TEL.GS1.DELTA             "-045014.485";  # Dec of candidate 1
+TEL.GS1.MAG               "12.419475";  # Magnitude of candidate 1
+OCS.SADT.GS1.ID           "02185818-0450144";  # ID of candidate 1
+
+TEL.GS2.ALPHA             "022431.718";  # RA of candidate 2
+TEL.GS2.DELTA             "-043023.436";  # Dec of candidate 2
+TEL.GS2.MAG               "13.825825";  # Magnitude of candidate 2
+OCS.SADT.GS2.ID           "02243171-0430234";  # ID of candidate 2
+
+TEL.GS3.ALPHA             "022428.088";  # RA of candidate 3
+TEL.GS3.DELTA             "-043214.989";  # Dec of candidate 3
+TEL.GS3.MAG               "14.617424999999999";  # Magnitude of candidate 3
+OCS.SADT.GS3.ID           "02242808-0432149";  # ID of candidate 3
+
+TEL.GS4.ALPHA             "022427.623";  # RA of candidate 4
+TEL.GS4.DELTA             "-043011.498";  # Dec of candidate 4
+TEL.GS4.MAG               "15.421302000000004";  # Magnitude of candidate 4
+OCS.SADT.GS4.ID           "02242762-0430114";  # ID of candidate 4
+
+TEL.GS5.ALPHA             "022424.169";  # RA of candidate 5
+TEL.GS5.DELTA             "-042915.202";  # Dec of candidate 5
+TEL.GS5.MAG               "15.453775000000004";  # Magnitude of candidate 5
+OCS.SADT.GS5.ID           "02242416-0429152";  # ID of candidate 5
+
+TEL.AO.START      "T";  # Start active optics
+TEL.AO.AOSTARA    "SETUPFILE";  # Select LOWFS_PY stars from this setup file (the default)
+TEL.AO.AOSTARB    "SETUPFILE";  # Select LOWFS_NY stars from this setup file (the default)
+
+TEL.AOSA1.ALPHA             "022446.556";  # RA of candidate 1
+TEL.AOSA1.DELTA             "-044143.372";  # Dec of candidate 1
+TEL.AOSA1.MAG               "11.802850000000001";  # Magnitude of candidate 1
+OCS.SADT.AOSA1.ID           "02244655-0441433";  # ID of candidate 1
+
+TEL.AOSA2.ALPHA             "022430.229";  # RA of candidate 2
+TEL.AOSA2.DELTA             "-043817.369";  # Dec of candidate 2
+TEL.AOSA2.MAG               "13.156749999999999";  # Magnitude of candidate 2
+OCS.SADT.AOSA2.ID           "02243022-0438173";  # ID of candidate 2
+
+TEL.AOSA3.ALPHA             "022437.912";  # RA of candidate 3
+TEL.AOSA3.DELTA             "-043949.709";  # Dec of candidate 3
+TEL.AOSA3.MAG               "14.536324999999998";  # Magnitude of candidate 3
+OCS.SADT.AOSA3.ID           "02243791-0439497";  # ID of candidate 3
+
+TEL.AOSB1.ALPHA             "021842.305";  # RA of candidate 1
+TEL.AOSB1.DELTA             "-043903.100";  # Dec of candidate 1
+TEL.AOSB1.MAG               "11.532625000000001";  # Magnitude of candidate 1
+OCS.SADT.AOSB1.ID           "02184230-0439030";  # ID of candidate 1
+
+TEL.AOSB2.ALPHA             "021846.871";  # RA of candidate 2
+TEL.AOSB2.DELTA             "-044019.384";  # Dec of candidate 2
+TEL.AOSB2.MAG               "13.247399999999999";  # Magnitude of candidate 2
+OCS.SADT.AOSB2.ID           "02184687-0440193";  # ID of candidate 2
+
+TEL.AOSB3.ALPHA             "021842.170";  # RA of candidate 3
+TEL.AOSB3.DELTA             "-044330.158";  # Dec of candidate 3
+TEL.AOSB3.MAG               "13.597975";  # Magnitude of candidate 3
+OCS.SADT.AOSB3.ID           "02184216-0443301";  # ID of candidate 3
+
+]]></REFSTARS>
+</PAWPRINT>
+<PAWPRINT dec="-044114.640" id="1_1:2" offangle="-90.0000" offsetx="0.0" offsety="0.475" ra="022204.440">
+<REFSTARS><![CDATA[PAF.HDR.START   ;  # Start of PAF Header
+PAF.TYPE          "paramfile";  # Type of PAF
+PAF.ID            "VIDEO-XXM2-1-1_1-2-20180725170731";  # Unique ID for PAF
+PAF.NAME          "VIDEO-XXM2-1-1_1-2.paf";  # Name of PAF
+PAF.DESC          "Telescope guide star candidates for Pawprint 2";  # Short description of PAF
+PAF.CRTE.NAME     "SADT v5.1.0 (VIRCAM-102.02)";  # Name of creator
+PAF.CRTE.DAYTIM   "2018-07-25 17:07";  # Civil Time for creation
+PAF.LCHG.NAME     "SADT v5.1.0";  # Name of person/application changing
+PAF.LCHG.DAYTIM   "2018-07-25 17:07";  # Timestamp of last change
+PAF.CHCK.NAME     "";  # Name of application checking
+OCS.SADT.ID             "VIDEO-XXM2";  # Survey ID (string)
+OCS.SADT.PATTERN        "Tile6n";  # Tile pattern ID
+OCS.SADT.MAXJIT        "15.0";  # maximum Jitter Size (arcsec)
+OCS.SADT.OVERLAPX       "60.0";  # tileOverlapX (arcsec)
+OCS.SADT.OVERLAPY       "60.0";  # tileOverlapY (arcsec)
+OCS.SADT.AREA.ID        "1";  # Survey Area ID (integer)
+OCS.SADT.TILE.ID        "1_1";  # Tile ID (x_y coordinate from bottom right) within Survey Area
+OCS.SADT.TILE.RA        "022204.440";  # Tile RA  ( hhmmss.ss)
+OCS.SADT.TILE.DEC       "-044644.400";  # Tile Dec (sddmmss.ss)
+OCS.SADT.TILE.OFFANGLE  "-90.0000";  # Tile Rotator Offangle
+PAF.HDR.END       ;  # End of PAF Header
+
+TPL.FILE.DIRNAME  "$INS_ROOT/$INS_USER/MISC/VISTA";
+
+OCS.SADT.CAT.ID   "2MASS at CDS (Imag synthesised from 2MASS JHKs)";  # Guide/AO star candidate catalogue
+OCS.SADT.IP.ID    "SADT v5.1.0, VIRCAM-102.02";  # Creator version
+
+TEL.AG.START      "T";  # Start autoguiding
+TEL.AG.GUIDESTAR  "SETUPFILE";  # Select guide stars from this setup file (the default)
+
+TEL.GS1.ALPHA             "022451.142";  # RA of candidate 1
+TEL.GS1.DELTA             "-042630.811";  # Dec of candidate 1
+TEL.GS1.MAG               "14.986525";  # Magnitude of candidate 1
+OCS.SADT.GS1.ID           "02245114-0426308";  # ID of candidate 1
+
+TEL.AO.START      "T";  # Start active optics
+TEL.AO.AOSTARA    "SETUPFILE";  # Select LOWFS_PY stars from this setup file (the default)
+TEL.AO.AOSTARB    "SETUPFILE";  # Select LOWFS_NY stars from this setup file (the default)
+
+TEL.AOSA1.ALPHA             "022446.556";  # RA of candidate 1
+TEL.AOSA1.DELTA             "-044143.372";  # Dec of candidate 1
+TEL.AOSA1.MAG               "11.802850000000001";  # Magnitude of candidate 1
+OCS.SADT.AOSA1.ID           "02244655-0441433";  # ID of candidate 1
+
+TEL.AOSA2.ALPHA             "022451.291";  # RA of candidate 2
+TEL.AOSA2.DELTA             "-043848.289";  # Dec of candidate 2
+TEL.AOSA2.MAG               "14.978724999999999";  # Magnitude of candidate 2
+OCS.SADT.AOSA2.ID           "02245129-0438482";  # ID of candidate 2
+
+TEL.AOSA3.ALPHA             "022500.279";  # RA of candidate 3
+TEL.AOSA3.DELTA             "-044037.916";  # Dec of candidate 3
+TEL.AOSA3.MAG               "15.033824999999998";  # Magnitude of candidate 3
+OCS.SADT.AOSA3.ID           "02250027-0440379";  # ID of candidate 3
+
+TEL.AOSB1.ALPHA             "021907.862";  # RA of candidate 1
+TEL.AOSB1.DELTA             "-043821.437";  # Dec of candidate 1
+TEL.AOSB1.MAG               "11.1206";  # Magnitude of candidate 1
+OCS.SADT.AOSB1.ID           "02190786-0438214";  # ID of candidate 1
+
+TEL.AOSB2.ALPHA             "021911.211";  # RA of candidate 2
+TEL.AOSB2.DELTA             "-043909.119";  # Dec of candidate 2
+TEL.AOSB2.MAG               "13.192899999999998";  # Magnitude of candidate 2
+OCS.SADT.AOSB2.ID           "02191121-0439091";  # ID of candidate 2
+
+TEL.AOSB3.ALPHA             "021920.672";  # RA of candidate 3
+TEL.AOSB3.DELTA             "-044041.171";  # Dec of candidate 3
+TEL.AOSB3.MAG               "14.760899999999998";  # Magnitude of candidate 3
+OCS.SADT.AOSB3.ID           "02192067-0440411";  # ID of candidate 3
+
+TEL.AOSB4.ALPHA             "021905.359";  # RA of candidate 4
+TEL.AOSB4.DELTA             "-044410.115";  # Dec of candidate 4
+TEL.AOSB4.MAG               "15.006096999999997";  # Magnitude of candidate 4
+OCS.SADT.AOSB4.ID           "02190535-0444101";  # ID of candidate 4
+
+]]></REFSTARS>
+</PAWPRINT>
+<PAWPRINT dec="-044114.640" id="1_1:3" offangle="-90.0000" offsetx="0.475" offsety="0.475" ra="022226.472">
+<REFSTARS><![CDATA[PAF.HDR.START   ;  # Start of PAF Header
+PAF.TYPE          "paramfile";  # Type of PAF
+PAF.ID            "VIDEO-XXM2-1-1_1-3-20180725170731";  # Unique ID for PAF
+PAF.NAME          "VIDEO-XXM2-1-1_1-3.paf";  # Name of PAF
+PAF.DESC          "Telescope guide star candidates for Pawprint 3";  # Short description of PAF
+PAF.CRTE.NAME     "SADT v5.1.0 (VIRCAM-102.02)";  # Name of creator
+PAF.CRTE.DAYTIM   "2018-07-25 17:07";  # Civil Time for creation
+PAF.LCHG.NAME     "SADT v5.1.0";  # Name of person/application changing
+PAF.LCHG.DAYTIM   "2018-07-25 17:07";  # Timestamp of last change
+PAF.CHCK.NAME     "";  # Name of application checking
+OCS.SADT.ID             "VIDEO-XXM2";  # Survey ID (string)
+OCS.SADT.PATTERN        "Tile6n";  # Tile pattern ID
+OCS.SADT.MAXJIT        "15.0";  # maximum Jitter Size (arcsec)
+OCS.SADT.OVERLAPX       "60.0";  # tileOverlapX (arcsec)
+OCS.SADT.OVERLAPY       "60.0";  # tileOverlapY (arcsec)
+OCS.SADT.AREA.ID        "1";  # Survey Area ID (integer)
+OCS.SADT.TILE.ID        "1_1";  # Tile ID (x_y coordinate from bottom right) within Survey Area
+OCS.SADT.TILE.RA        "022204.440";  # Tile RA  ( hhmmss.ss)
+OCS.SADT.TILE.DEC       "-044644.400";  # Tile Dec (sddmmss.ss)
+OCS.SADT.TILE.OFFANGLE  "-90.0000";  # Tile Rotator Offangle
+PAF.HDR.END       ;  # End of PAF Header
+
+TPL.FILE.DIRNAME  "$INS_ROOT/$INS_USER/MISC/VISTA";
+
+OCS.SADT.CAT.ID   "2MASS at CDS (Imag synthesised from 2MASS JHKs)";  # Guide/AO star candidate catalogue
+OCS.SADT.IP.ID    "SADT v5.1.0, VIRCAM-102.02";  # Creator version
+
+TEL.AG.START      "T";  # Start autoguiding
+TEL.AG.GUIDESTAR  "SETUPFILE";  # Select guide stars from this setup file (the default)
+
+TEL.GS1.ALPHA             "022514.395";  # RA of candidate 1
+TEL.GS1.DELTA             "-042710.296";  # Dec of candidate 1
+TEL.GS1.MAG               "11.717875000000001";  # Magnitude of candidate 1
+OCS.SADT.GS1.ID           "02251439-0427102";  # ID of candidate 1
+
+TEL.GS2.ALPHA             "022513.007";  # RA of candidate 2
+TEL.GS2.DELTA             "-042633.594";  # Dec of candidate 2
+TEL.GS2.MAG               "14.238575";  # Magnitude of candidate 2
+OCS.SADT.GS2.ID           "02251300-0426335";  # ID of candidate 2
+
+TEL.GS3.ALPHA             "022510.246";  # RA of candidate 3
+TEL.GS3.DELTA             "-043203.044";  # Dec of candidate 3
+TEL.GS3.MAG               "14.295199999999998";  # Magnitude of candidate 3
+OCS.SADT.GS3.ID           "02251024-0432030";  # ID of candidate 3
+
+TEL.GS4.ALPHA             "021938.550";  # RA of candidate 4
+TEL.GS4.DELTA             "-045217.861";  # Dec of candidate 4
+TEL.GS4.MAG               "15.239175000000001";  # Magnitude of candidate 4
+OCS.SADT.GS4.ID           "02193855-0452178";  # ID of candidate 4
+
+TEL.GS5.ALPHA             "022515.891";  # RA of candidate 5
+TEL.GS5.DELTA             "-042924.104";  # Dec of candidate 5
+TEL.GS5.MAG               "15.306624999999999";  # Magnitude of candidate 5
+OCS.SADT.GS5.ID           "02251589-0429241";  # ID of candidate 5
+
+TEL.AO.START      "T";  # Start active optics
+TEL.AO.AOSTARA    "SETUPFILE";  # Select LOWFS_PY stars from this setup file (the default)
+TEL.AO.AOSTARB    "SETUPFILE";  # Select LOWFS_NY stars from this setup file (the default)
+
+TEL.AOSA1.ALPHA             "022532.006";  # RA of candidate 1
+TEL.AOSA1.DELTA             "-044054.854";  # Dec of candidate 1
+TEL.AOSA1.MAG               "13.582025";  # Magnitude of candidate 1
+OCS.SADT.AOSA1.ID           "02253200-0440548";  # ID of candidate 1
+
+TEL.AOSB1.ALPHA             "021938.139";  # RA of candidate 1
+TEL.AOSB1.DELTA             "-044106.713";  # Dec of candidate 1
+TEL.AOSB1.MAG               "14.27935";  # Magnitude of candidate 1
+OCS.SADT.AOSB1.ID           "02193813-0441067";  # ID of candidate 1
+
+TEL.AOSB2.ALPHA             "021920.672";  # RA of candidate 2
+TEL.AOSB2.DELTA             "-044041.171";  # Dec of candidate 2
+TEL.AOSB2.MAG               "14.760899999999998";  # Magnitude of candidate 2
+OCS.SADT.AOSB2.ID           "02192067-0440411";  # ID of candidate 2
+
+]]></REFSTARS>
+</PAWPRINT>
+<PAWPRINT dec="-045214.160" id="1_1:4" offangle="-90.0001" offsetx="0.475" offsety="-0.475" ra="022226.472">
+<REFSTARS><![CDATA[PAF.HDR.START   ;  # Start of PAF Header
+PAF.TYPE          "paramfile";  # Type of PAF
+PAF.ID            "VIDEO-XXM2-1-1_1-4-20180725170731";  # Unique ID for PAF
+PAF.NAME          "VIDEO-XXM2-1-1_1-4.paf";  # Name of PAF
+PAF.DESC          "Telescope guide star candidates for Pawprint 4";  # Short description of PAF
+PAF.CRTE.NAME     "SADT v5.1.0 (VIRCAM-102.02)";  # Name of creator
+PAF.CRTE.DAYTIM   "2018-07-25 17:07";  # Civil Time for creation
+PAF.LCHG.NAME     "SADT v5.1.0";  # Name of person/application changing
+PAF.LCHG.DAYTIM   "2018-07-25 17:07";  # Timestamp of last change
+PAF.CHCK.NAME     "";  # Name of application checking
+OCS.SADT.ID             "VIDEO-XXM2";  # Survey ID (string)
+OCS.SADT.PATTERN        "Tile6n";  # Tile pattern ID
+OCS.SADT.MAXJIT        "15.0";  # maximum Jitter Size (arcsec)
+OCS.SADT.OVERLAPX       "60.0";  # tileOverlapX (arcsec)
+OCS.SADT.OVERLAPY       "60.0";  # tileOverlapY (arcsec)
+OCS.SADT.AREA.ID        "1";  # Survey Area ID (integer)
+OCS.SADT.TILE.ID        "1_1";  # Tile ID (x_y coordinate from bottom right) within Survey Area
+OCS.SADT.TILE.RA        "022204.440";  # Tile RA  ( hhmmss.ss)
+OCS.SADT.TILE.DEC       "-044644.400";  # Tile Dec (sddmmss.ss)
+OCS.SADT.TILE.OFFANGLE  "-90.0000";  # Tile Rotator Offangle
+PAF.HDR.END       ;  # End of PAF Header
+
+TPL.FILE.DIRNAME  "$INS_ROOT/$INS_USER/MISC/VISTA";
+
+OCS.SADT.CAT.ID   "2MASS at CDS (Imag synthesised from 2MASS JHKs)";  # Guide/AO star candidate catalogue
+OCS.SADT.IP.ID    "SADT v5.1.0, VIRCAM-102.02";  # Creator version
+
+TEL.AG.START      "T";  # Start autoguiding
+TEL.AG.GUIDESTAR  "SETUPFILE";  # Select guide stars from this setup file (the default)
+
+TEL.GS1.ALPHA             "022512.203";  # RA of candidate 1
+TEL.GS1.DELTA             "-044335.375";  # Dec of candidate 1
+TEL.GS1.MAG               "15.594325";  # Magnitude of candidate 1
+OCS.SADT.GS1.ID           "02251220-0443353";  # ID of candidate 1
+
+TEL.AO.START      "T";  # Start active optics
+TEL.AO.AOSTARA    "SETUPFILE";  # Select LOWFS_PY stars from this setup file (the default)
+TEL.AO.AOSTARB    "SETUPFILE";  # Select LOWFS_NY stars from this setup file (the default)
+
+TEL.AOSA1.ALPHA             "022519.424";  # RA of candidate 1
+TEL.AOSA1.DELTA             "-044916.802";  # Dec of candidate 1
+TEL.AOSA1.MAG               "13.389525";  # Magnitude of candidate 1
+OCS.SADT.AOSA1.ID           "02251942-0449168";  # ID of candidate 1
+
+TEL.AOSA2.ALPHA             "022529.299";  # RA of candidate 2
+TEL.AOSA2.DELTA             "-045457.643";  # Dec of candidate 2
+TEL.AOSA2.MAG               "14.8758";  # Magnitude of candidate 2
+OCS.SADT.AOSA2.ID           "02252929-0454576";  # ID of candidate 2
+
+TEL.AOSB1.ALPHA             "021924.194";  # RA of candidate 1
+TEL.AOSB1.DELTA             "-045440.259";  # Dec of candidate 1
+TEL.AOSB1.MAG               "14.4471";  # Magnitude of candidate 1
+OCS.SADT.AOSB1.ID           "02192419-0454402";  # ID of candidate 1
+
+]]></REFSTARS>
+</PAWPRINT>
+<PAWPRINT dec="-045214.160" id="1_1:5" offangle="-90.0001" offsetx="0.0" offsety="-0.475" ra="022204.440">
+<REFSTARS><![CDATA[PAF.HDR.START   ;  # Start of PAF Header
+PAF.TYPE          "paramfile";  # Type of PAF
+PAF.ID            "VIDEO-XXM2-1-1_1-5-20180725170731";  # Unique ID for PAF
+PAF.NAME          "VIDEO-XXM2-1-1_1-5.paf";  # Name of PAF
+PAF.DESC          "Telescope guide star candidates for Pawprint 5";  # Short description of PAF
+PAF.CRTE.NAME     "SADT v5.1.0 (VIRCAM-102.02)";  # Name of creator
+PAF.CRTE.DAYTIM   "2018-07-25 17:07";  # Civil Time for creation
+PAF.LCHG.NAME     "SADT v5.1.0";  # Name of person/application changing
+PAF.LCHG.DAYTIM   "2018-07-25 17:07";  # Timestamp of last change
+PAF.CHCK.NAME     "";  # Name of application checking
+OCS.SADT.ID             "VIDEO-XXM2";  # Survey ID (string)
+OCS.SADT.PATTERN        "Tile6n";  # Tile pattern ID
+OCS.SADT.MAXJIT        "15.0";  # maximum Jitter Size (arcsec)
+OCS.SADT.OVERLAPX       "60.0";  # tileOverlapX (arcsec)
+OCS.SADT.OVERLAPY       "60.0";  # tileOverlapY (arcsec)
+OCS.SADT.AREA.ID        "1";  # Survey Area ID (integer)
+OCS.SADT.TILE.ID        "1_1";  # Tile ID (x_y coordinate from bottom right) within Survey Area
+OCS.SADT.TILE.RA        "022204.440";  # Tile RA  ( hhmmss.ss)
+OCS.SADT.TILE.DEC       "-044644.400";  # Tile Dec (sddmmss.ss)
+OCS.SADT.TILE.OFFANGLE  "-90.0000";  # Tile Rotator Offangle
+PAF.HDR.END       ;  # End of PAF Header
+
+TPL.FILE.DIRNAME  "$INS_ROOT/$INS_USER/MISC/VISTA";
+
+OCS.SADT.CAT.ID   "2MASS at CDS (Imag synthesised from 2MASS JHKs)";  # Guide/AO star candidate catalogue
+OCS.SADT.IP.ID    "SADT v5.1.0, VIRCAM-102.02";  # Creator version
+
+TEL.AG.START      "T";  # Start autoguiding
+TEL.AG.GUIDESTAR  "SETUPFILE";  # Select guide stars from this setup file (the default)
+
+TEL.GS1.ALPHA             "022446.556";  # RA of candidate 1
+TEL.GS1.DELTA             "-044143.372";  # Dec of candidate 1
+TEL.GS1.MAG               "11.802850000000001";  # Magnitude of candidate 1
+OCS.SADT.GS1.ID           "02244655-0441433";  # ID of candidate 1
+
+TEL.GS2.ALPHA             "022451.291";  # RA of candidate 2
+TEL.GS2.DELTA             "-043848.289";  # Dec of candidate 2
+TEL.GS2.MAG               "14.978724999999999";  # Magnitude of candidate 2
+OCS.SADT.GS2.ID           "02245129-0438482";  # ID of candidate 2
+
+TEL.GS3.ALPHA             "021915.494";  # RA of candidate 3
+TEL.GS3.DELTA             "-050525.418";  # Dec of candidate 3
+TEL.GS3.MAG               "14.9953";  # Magnitude of candidate 3
+OCS.SADT.GS3.ID           "02191549-0505254";  # ID of candidate 3
+
+TEL.AO.START      "T";  # Start active optics
+TEL.AO.AOSTARA    "SETUPFILE";  # Select LOWFS_PY stars from this setup file (the default)
+TEL.AO.AOSTARB    "SETUPFILE";  # Select LOWFS_NY stars from this setup file (the default)
+
+TEL.AOSA1.ALPHA             "022503.088";  # RA of candidate 1
+TEL.AOSA1.DELTA             "-045353.815";  # Dec of candidate 1
+TEL.AOSA1.MAG               "14.994064000000002";  # Magnitude of candidate 1
+OCS.SADT.AOSA1.ID           "02250308-0453538";  # ID of candidate 1
+
+TEL.AOSB1.ALPHA             "021858.181";  # RA of candidate 1
+TEL.AOSB1.DELTA             "-045014.485";  # Dec of candidate 1
+TEL.AOSB1.MAG               "12.419475";  # Magnitude of candidate 1
+OCS.SADT.AOSB1.ID           "02185818-0450144";  # ID of candidate 1
+
+TEL.AOSB2.ALPHA             "021858.272";  # RA of candidate 2
+TEL.AOSB2.DELTA             "-044948.396";  # Dec of candidate 2
+TEL.AOSB2.MAG               "13.38765";  # Magnitude of candidate 2
+OCS.SADT.AOSB2.ID           "02185827-0449483";  # ID of candidate 2
+
+]]></REFSTARS>
+</PAWPRINT>
+<PAWPRINT dec="-045214.160" id="1_1:6" offangle="-90.0001" offsetx="-0.475" offsety="-0.475" ra="022142.384">
+<REFSTARS><![CDATA[PAF.HDR.START   ;  # Start of PAF Header
+PAF.TYPE          "paramfile";  # Type of PAF
+PAF.ID            "VIDEO-XXM2-1-1_1-6-20180725170731";  # Unique ID for PAF
+PAF.NAME          "VIDEO-XXM2-1-1_1-6.paf";  # Name of PAF
+PAF.DESC          "Telescope guide star candidates for Pawprint 6";  # Short description of PAF
+PAF.CRTE.NAME     "SADT v5.1.0 (VIRCAM-102.02)";  # Name of creator
+PAF.CRTE.DAYTIM   "2018-07-25 17:07";  # Civil Time for creation
+PAF.LCHG.NAME     "SADT v5.1.0";  # Name of person/application changing
+PAF.LCHG.DAYTIM   "2018-07-25 17:07";  # Timestamp of last change
+PAF.CHCK.NAME     "";  # Name of application checking
+OCS.SADT.ID             "VIDEO-XXM2";  # Survey ID (string)
+OCS.SADT.PATTERN        "Tile6n";  # Tile pattern ID
+OCS.SADT.MAXJIT        "15.0";  # maximum Jitter Size (arcsec)
+OCS.SADT.OVERLAPX       "60.0";  # tileOverlapX (arcsec)
+OCS.SADT.OVERLAPY       "60.0";  # tileOverlapY (arcsec)
+OCS.SADT.AREA.ID        "1";  # Survey Area ID (integer)
+OCS.SADT.TILE.ID        "1_1";  # Tile ID (x_y coordinate from bottom right) within Survey Area
+OCS.SADT.TILE.RA        "022204.440";  # Tile RA  ( hhmmss.ss)
+OCS.SADT.TILE.DEC       "-044644.400";  # Tile Dec (sddmmss.ss)
+OCS.SADT.TILE.OFFANGLE  "-90.0000";  # Tile Rotator Offangle
+PAF.HDR.END       ;  # End of PAF Header
+
+TPL.FILE.DIRNAME  "$INS_ROOT/$INS_USER/MISC/VISTA";
+
+OCS.SADT.CAT.ID   "2MASS at CDS (Imag synthesised from 2MASS JHKs)";  # Guide/AO star candidate catalogue
+OCS.SADT.IP.ID    "SADT v5.1.0, VIRCAM-102.02";  # Creator version
+
+TEL.AG.START      "T";  # Start autoguiding
+TEL.AG.GUIDESTAR  "SETUPFILE";  # Select guide stars from this setup file (the default)
+
+TEL.GS1.ALPHA             "022430.229";  # RA of candidate 1
+TEL.GS1.DELTA             "-043817.369";  # Dec of candidate 1
+TEL.GS1.MAG               "13.156749999999999";  # Magnitude of candidate 1
+OCS.SADT.GS1.ID           "02243022-0438173";  # ID of candidate 1
+
+TEL.GS2.ALPHA             "022430.901";  # RA of candidate 2
+TEL.GS2.DELTA             "-044224.037";  # Dec of candidate 2
+TEL.GS2.MAG               "15.5462";  # Magnitude of candidate 2
+OCS.SADT.GS2.ID           "02243090-0442240";  # ID of candidate 2
+
+TEL.GS3.ALPHA             "022430.030";  # RA of candidate 3
+TEL.GS3.DELTA             "-043747.248";  # Dec of candidate 3
+TEL.GS3.MAG               "15.769684";  # Magnitude of candidate 3
+OCS.SADT.GS3.ID           "02243003-0437472";  # ID of candidate 3
+
+TEL.GS4.ALPHA             "022431.713";  # RA of candidate 4
+TEL.GS4.DELTA             "-043811.288";  # Dec of candidate 4
+TEL.GS4.MAG               "16.380926999999996";  # Magnitude of candidate 4
+OCS.SADT.GS4.ID           "02243171-0438112";  # ID of candidate 4
+
+TEL.AO.START      "T";  # Start active optics
+TEL.AO.AOSTARA    "SETUPFILE";  # Select LOWFS_PY stars from this setup file (the default)
+TEL.AO.AOSTARB    "SETUPFILE";  # Select LOWFS_NY stars from this setup file (the default)
+
+TEL.AOSA1.ALPHA             "022439.014";  # RA of candidate 1
+TEL.AOSA1.DELTA             "-045005.658";  # Dec of candidate 1
+TEL.AOSA1.MAG               "14.077049999999998";  # Magnitude of candidate 1
+OCS.SADT.AOSA1.ID           "02243901-0450056";  # ID of candidate 1
+
+TEL.AOSA2.ALPHA             "022433.675";  # RA of candidate 2
+TEL.AOSA2.DELTA             "-045054.434";  # Dec of candidate 2
+TEL.AOSA2.MAG               "14.833";  # Magnitude of candidate 2
+OCS.SADT.AOSA2.ID           "02243367-0450544";  # ID of candidate 2
+
+TEL.AOSB1.ALPHA             "021842.571";  # RA of candidate 1
+TEL.AOSB1.DELTA             "-045321.667";  # Dec of candidate 1
+TEL.AOSB1.MAG               "11.881625";  # Magnitude of candidate 1
+OCS.SADT.AOSB1.ID           "02184257-0453216";  # ID of candidate 1
+
+TEL.AOSB2.ALPHA             "021858.181";  # RA of candidate 2
+TEL.AOSB2.DELTA             "-045014.485";  # Dec of candidate 2
+TEL.AOSB2.MAG               "12.419475";  # Magnitude of candidate 2
+OCS.SADT.AOSB2.ID           "02185818-0450144";  # ID of candidate 2
+
+TEL.AOSB3.ALPHA             "021858.272";  # RA of candidate 3
+TEL.AOSB3.DELTA             "-044948.396";  # Dec of candidate 3
+TEL.AOSB3.MAG               "13.38765";  # Magnitude of candidate 3
+OCS.SADT.AOSB3.ID           "02185827-0449483";  # ID of candidate 3
+
+TEL.AOSB4.ALPHA             "021840.021";  # RA of candidate 4
+TEL.AOSB4.DELTA             "-045126.435";  # Dec of candidate 4
+TEL.AOSB4.MAG               "14.303266999999996";  # Magnitude of candidate 4
+OCS.SADT.AOSB4.ID           "02184002-0451264";  # ID of candidate 4
+
+]]></REFSTARS>
+</PAWPRINT>
+</TILE>
+</SURVEY_AREA>
+</SURVEY>
